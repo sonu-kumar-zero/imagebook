@@ -1,5 +1,37 @@
 [
     {
+        "label": "QObject",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Observer",
+        "importPath": "watchdog.observers",
+        "description": "watchdog.observers",
+        "isExtraImport": true,
+        "detail": "watchdog.observers",
+        "documentation": {}
+    },
+    {
+        "label": "FileSystemEventHandler",
+        "importPath": "watchdog.events",
+        "description": "watchdog.events",
+        "isExtraImport": true,
+        "detail": "watchdog.events",
+        "documentation": {}
+    },
+    {
         "label": "QWidget",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -57,11 +89,37 @@
         "documentation": {}
     },
     {
+        "label": "FileWatcher",
+        "importPath": "app.services.file_watcher",
+        "description": "app.services.file_watcher",
+        "isExtraImport": true,
+        "detail": "app.services.file_watcher",
+        "documentation": {}
+    },
+    {
+        "label": "WatcherHandler",
+        "kind": 6,
+        "importPath": "app.services.file_watcher",
+        "description": "app.services.file_watcher",
+        "peekOfCode": "class WatcherHandler(FileSystemEventHandler):\n    def __init__(self, callback):\n        super().__init__()\n        self.callback = callback\n    def on_modified(self, event):\n        if not event.is_directory:\n            self.callback(event.src_path)\nclass FileWatcher(QObject):\n    file_changed = Signal(str)\n    def __init__(self, path):",
+        "detail": "app.services.file_watcher",
+        "documentation": {}
+    },
+    {
+        "label": "FileWatcher",
+        "kind": 6,
+        "importPath": "app.services.file_watcher",
+        "description": "app.services.file_watcher",
+        "peekOfCode": "class FileWatcher(QObject):\n    file_changed = Signal(str)\n    def __init__(self, path):\n        super().__init__()\n        self.path = path\n        self.observer = Observer()\n        self.handler = WatcherHandler(\n            self.emit_change\n        )\n    def emit_change(self, path):",
+        "detail": "app.services.file_watcher",
+        "documentation": {}
+    },
+    {
         "label": "HomeWindow",
         "kind": 6,
         "importPath": "app.ui.windows.home_window",
         "description": "app.ui.windows.home_window",
-        "peekOfCode": "class HomeWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"Image Book Creator\")\n        self.resize(900, 600)\n        layout = QVBoxLayout()\n        title = QLabel(\"Image Book Creator\")\n        new_btn = QPushButton(\"Create New Project\")\n        open_btn = QPushButton(\"Open Existing Project\")\n        layout.addWidget(title)",
+        "peekOfCode": "class HomeWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        print(\"[DEBUG] hello\")\n        self.setWindowTitle(\"Image Book Creator\")\n        self.resize(900, 600)\n        layout = QVBoxLayout()\n        title = QLabel(\"Image Book Creator\")\n        new_btn = QPushButton(\"Create New Project\")\n        open_btn = QPushButton(\"Open Existing Project\")",
         "detail": "app.ui.windows.home_window",
         "documentation": {}
     },
@@ -70,7 +128,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def main():\n    app = QApplication(sys.argv)\n    window = HomeWindow()\n    window.show()\n    sys.exit(app.exec())\nif __name__ == \"__main__\":\n    main()",
+        "peekOfCode": "def main():\n    app = QApplication(sys.argv)\n    window = HomeWindow()\n    # Attach watcher to window\n    window.watcher = FileWatcher(\"./projects\")\n    window.watcher.file_changed.connect(\n        window.on_file_changed\n    )\n    window.watcher.start()\n    window.show()",
         "detail": "main",
         "documentation": {}
     }
