@@ -1,0 +1,77 @@
+[
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "HomeWindow",
+        "importPath": "app.ui.windows.home_window",
+        "description": "app.ui.windows.home_window",
+        "isExtraImport": true,
+        "detail": "app.ui.windows.home_window",
+        "documentation": {}
+    },
+    {
+        "label": "HomeWindow",
+        "kind": 6,
+        "importPath": "app.ui.windows.home_window",
+        "description": "app.ui.windows.home_window",
+        "peekOfCode": "class HomeWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"Image Book Creator\")\n        self.resize(900, 600)\n        layout = QVBoxLayout()\n        title = QLabel(\"Image Book Creator\")\n        new_btn = QPushButton(\"Create New Project\")\n        open_btn = QPushButton(\"Open Existing Project\")\n        layout.addWidget(title)",
+        "detail": "app.ui.windows.home_window",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    app = QApplication(sys.argv)\n    window = HomeWindow()\n    window.show()\n    sys.exit(app.exec())\nif __name__ == \"__main__\":\n    main()",
+        "detail": "main",
+        "documentation": {}
+    }
+]
