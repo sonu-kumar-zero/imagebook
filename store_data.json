@@ -1,0 +1,32 @@
+{
+  "project_name": "Vacation Book",
+  "page_size": {
+    "width": 2480,
+    "height": 3508
+  },
+  "pages": [
+    {
+      "id": "page_1",
+      "template": {
+        "placeholders": [
+          {
+            "x": 120,
+            "y": 200,
+            "width": 600,
+            "height": 400
+          },
+          {
+            "x": 800,
+            "y": 200,
+            "width": 600,
+            "height": 400
+          }
+        ]
+      },
+      "images": [
+        "photos/img1.jpg",
+        "photos/img2.jpg"
+      ]
+    }
+  ]
+}

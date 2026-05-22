@@ -16,6 +16,30 @@
         "documentation": {}
     },
     {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QTimer",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QTimer",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
         "label": "Observer",
         "importPath": "watchdog.observers",
         "description": "watchdog.observers",
@@ -64,11 +88,59 @@
         "documentation": {}
     },
     {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QApplication",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
         "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "ASSETS_DIR",
+        "importPath": "app.utils.paths",
+        "description": "app.utils.paths",
+        "isExtraImport": true,
+        "detail": "app.utils.paths",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
         "documentation": {}
     },
     {
@@ -89,11 +161,11 @@
         "documentation": {}
     },
     {
-        "label": "FileWatcher",
-        "importPath": "app.services.file_watcher",
-        "description": "app.services.file_watcher",
+        "label": "SplashScreen",
+        "importPath": "app.ui.windows.splash_screen",
+        "description": "app.ui.windows.splash_screen",
         "isExtraImport": true,
-        "detail": "app.services.file_watcher",
+        "detail": "app.ui.windows.splash_screen",
         "documentation": {}
     },
     {
@@ -119,8 +191,35 @@
         "kind": 6,
         "importPath": "app.ui.windows.home_window",
         "description": "app.ui.windows.home_window",
-        "peekOfCode": "class HomeWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        print(\"[DEBUG] hello\")\n        self.setWindowTitle(\"Image Book Creator\")\n        self.resize(900, 600)\n        layout = QVBoxLayout()\n        title = QLabel(\"Image Book Creator\")\n        new_btn = QPushButton(\"Create New Project\")\n        open_btn = QPushButton(\"Open Existing Project\")",
+        "peekOfCode": "class HomeWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"Image Book Creator\")\n        self.resize(900, 600)\n        layout = QVBoxLayout()\n        title = QLabel(\"Image Book Creator\")\n        new_btn = QPushButton(\"Create New Project\")\n        open_btn = QPushButton(\"Open Existing Project\")\n        layout.addWidget(title)",
         "detail": "app.ui.windows.home_window",
+        "documentation": {}
+    },
+    {
+        "label": "SplashScreen",
+        "kind": 6,
+        "importPath": "app.ui.windows.splash_screen",
+        "description": "app.ui.windows.splash_screen",
+        "peekOfCode": "class SplashScreen(QWidget):\n    WIDTH = 900\n    HEIGHT = 550\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"PicBook\")\n        self.setFixedSize(\n            self.WIDTH,\n            self.HEIGHT,\n        )",
+        "detail": "app.ui.windows.splash_screen",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_DIR",
+        "kind": 5,
+        "importPath": "app.utils.paths",
+        "description": "app.utils.paths",
+        "peekOfCode": "ROOT_DIR = Path(__file__).resolve().parent.parent.parent\nASSETS_DIR = ROOT_DIR / \"app\" / \"ui\" / \"assets\"",
+        "detail": "app.utils.paths",
+        "documentation": {}
+    },
+    {
+        "label": "ASSETS_DIR",
+        "kind": 5,
+        "importPath": "app.utils.paths",
+        "description": "app.utils.paths",
+        "peekOfCode": "ASSETS_DIR = ROOT_DIR / \"app\" / \"ui\" / \"assets\"",
+        "detail": "app.utils.paths",
         "documentation": {}
     },
     {
@@ -128,7 +227,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def main():\n    app = QApplication(sys.argv)\n    window = HomeWindow()\n    # Attach watcher to window\n    window.watcher = FileWatcher(\"./projects\")\n    window.watcher.file_changed.connect(\n        window.on_file_changed\n    )\n    window.watcher.start()\n    window.show()",
+        "peekOfCode": "def main():\n    app = QApplication(sys.argv)\n    splash = SplashScreen()\n    splash.show()\n    window = HomeWindow()\n    def show_main_window():\n        splash.close()\n        window.show()\n    QTimer.singleShot(\n        2500,",
         "detail": "main",
         "documentation": {}
     }

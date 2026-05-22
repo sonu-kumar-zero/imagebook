@@ -1,30 +1,30 @@
 import sys
 
+from PySide6.QtCore import QTimer
 from PySide6.QtWidgets import QApplication
 
 from app.ui.windows.home_window import HomeWindow
-from app.services.file_watcher import FileWatcher
+from app.ui.windows.splash_screen import SplashScreen
 
 
 def main():
     app = QApplication(sys.argv)
 
+    splash = SplashScreen()
+    splash.show()
+
     window = HomeWindow()
 
-    # Attach watcher to window
-    window.watcher = FileWatcher("./projects")
+    def show_main_window():
+        splash.close()
+        window.show()
 
-    window.watcher.file_changed.connect(
-        window.on_file_changed
+    QTimer.singleShot(
+        2500,
+        show_main_window
     )
 
-    window.watcher.start()
-
-    window.show()
-
     exit_code = app.exec()
-
-    window.watcher.stop()
 
     sys.exit(exit_code)
 

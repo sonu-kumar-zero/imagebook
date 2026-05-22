@@ -25,6 +25,3 @@ class HomeWindow(QWidget):
         layout.addWidget(open_btn)
 
         self.setLayout(layout)
-
-    def on_file_changed(self, path):
-        print("File changed:", path)
