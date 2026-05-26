@@ -3,9 +3,9 @@ import sys
 # from PySide6.QtCore import QTimer
 from PySide6.QtWidgets import QApplication
 
-from app.ui.windows.home_window import HomeWindow
+# from app.ui.windows.home_window import HomeWindow
 # from app.ui.windows.splash_screen import SplashScreen
-
+from app.ui.windows.card_window import CardWindow
 
 def main():
     app = QApplication(sys.argv)
@@ -13,7 +13,7 @@ def main():
     # splash = SplashScreen()
     #splash.show()
 
-    window = HomeWindow()
+    window = CardWindow()
 
     # def show_main_window():
         # splash.close()
