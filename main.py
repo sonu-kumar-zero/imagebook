@@ -1,28 +1,28 @@
 import sys
 
-from PySide6.QtCore import QTimer
+# from PySide6.QtCore import QTimer
 from PySide6.QtWidgets import QApplication
 
 from app.ui.windows.home_window import HomeWindow
-from app.ui.windows.splash_screen import SplashScreen
+# from app.ui.windows.splash_screen import SplashScreen
 
 
 def main():
     app = QApplication(sys.argv)
 
-    splash = SplashScreen()
-    splash.show()
+    # splash = SplashScreen()
+    #splash.show()
 
     window = HomeWindow()
 
-    def show_main_window():
-        splash.close()
-        window.show()
+    # def show_main_window():
+        # splash.close()
+    window.show()
 
-    QTimer.singleShot(
-        2500,
-        show_main_window
-    )
+    # QTimer.singleShot(
+    #     2500,
+    #     show_main_window
+    # )
 
     exit_code = app.exec()
 

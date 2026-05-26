@@ -24,7 +24,7 @@
         "documentation": {}
     },
     {
-        "label": "QTimer",
+        "label": "Qt",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
         "isExtraImport": true,
@@ -56,7 +56,7 @@
         "documentation": {}
     },
     {
-        "label": "QWidget",
+        "label": "QFrame",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -64,7 +64,7 @@
         "documentation": {}
     },
     {
-        "label": "QVBoxLayout",
+        "label": "QLabel",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -80,7 +80,103 @@
         "documentation": {}
     },
     {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSizePolicy",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFrame",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -117,6 +213,38 @@
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
         "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "Header",
+        "importPath": "app.ui.widgets.header_home_screen",
+        "description": "app.ui.widgets.header_home_screen",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.header_home_screen",
+        "documentation": {}
+    },
+    {
+        "label": "ActionCard",
+        "importPath": "app.ui.widgets.action_card_home_screen",
+        "description": "app.ui.widgets.action_card_home_screen",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.action_card_home_screen",
+        "documentation": {}
+    },
+    {
+        "label": "SectionFrame",
+        "importPath": "app.ui.widgets.section_frame_home_screen",
+        "description": "app.ui.widgets.section_frame_home_screen",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.section_frame_home_screen",
+        "documentation": {}
+    },
+    {
+        "label": "HOME_STYLE",
+        "importPath": "app.ui.styles.home_style",
+        "description": "app.ui.styles.home_style",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.home_style",
         "documentation": {}
     },
     {
@@ -161,14 +289,6 @@
         "documentation": {}
     },
     {
-        "label": "SplashScreen",
-        "importPath": "app.ui.windows.splash_screen",
-        "description": "app.ui.windows.splash_screen",
-        "isExtraImport": true,
-        "detail": "app.ui.windows.splash_screen",
-        "documentation": {}
-    },
-    {
         "label": "WatcherHandler",
         "kind": 6,
         "importPath": "app.services.file_watcher",
@@ -187,11 +307,47 @@
         "documentation": {}
     },
     {
+        "label": "HOME_STYLE",
+        "kind": 5,
+        "importPath": "app.ui.styles.home_style",
+        "description": "app.ui.styles.home_style",
+        "peekOfCode": "HOME_STYLE = \"\"\"\nQWidget {\n    background: #f5f6fa;\n    font-size: 14px;\n}\nQLabel {\n    color: #1f2937;\n}\n#titleLabel {\n    font-size: 36px;",
+        "detail": "app.ui.styles.home_style",
+        "documentation": {}
+    },
+    {
+        "label": "ActionCard",
+        "kind": 6,
+        "importPath": "app.ui.widgets.action_card_home_screen",
+        "description": "app.ui.widgets.action_card_home_screen",
+        "peekOfCode": "class ActionCard(QFrame):\n    def __init__(\n        self,\n        title: str,\n        description: str,\n        button_text: str = \"Continue\",\n    ):\n        super().__init__()\n        self.setObjectName(\"actionCard\")\n        self.setSizePolicy(",
+        "detail": "app.ui.widgets.action_card_home_screen",
+        "documentation": {}
+    },
+    {
+        "label": "Header",
+        "kind": 6,
+        "importPath": "app.ui.widgets.header_home_screen",
+        "description": "app.ui.widgets.header_home_screen",
+        "peekOfCode": "class Header(QWidget):\n    def __init__(\n        self,\n        title: str,\n        subtitle: str,\n    ):\n        super().__init__()\n        layout = QVBoxLayout(self)\n        layout.setSpacing(4)\n        title_label = QLabel(title)",
+        "detail": "app.ui.widgets.header_home_screen",
+        "documentation": {}
+    },
+    {
+        "label": "SectionFrame",
+        "kind": 6,
+        "importPath": "app.ui.widgets.section_frame_home_screen",
+        "description": "app.ui.widgets.section_frame_home_screen",
+        "peekOfCode": "class SectionFrame(QFrame):\n    def __init__(self, title: str):\n        super().__init__()\n        self.setObjectName(\"sectionFrame\")\n        self.main_layout = QVBoxLayout(self)\n        self.main_layout.setContentsMargins(\n            20,\n            20,\n            20,\n            20,",
+        "detail": "app.ui.widgets.section_frame_home_screen",
+        "documentation": {}
+    },
+    {
         "label": "HomeWindow",
         "kind": 6,
         "importPath": "app.ui.windows.home_window",
         "description": "app.ui.windows.home_window",
-        "peekOfCode": "class HomeWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"Image Book Creator\")\n        self.resize(900, 600)\n        layout = QVBoxLayout()\n        title = QLabel(\"Image Book Creator\")\n        new_btn = QPushButton(\"Create New Project\")\n        open_btn = QPushButton(\"Open Existing Project\")\n        layout.addWidget(title)",
+        "peekOfCode": "class HomeWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"ImageBook\")\n        self.resize(1080, 720)\n        self.setup_ui()\n    def setup_ui(self):\n        self.setStyleSheet(HOME_STYLE)\n        root = QVBoxLayout()\n        root.setContentsMargins(40, 30, 40, 30)",
         "detail": "app.ui.windows.home_window",
         "documentation": {}
     },
@@ -227,7 +383,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def main():\n    app = QApplication(sys.argv)\n    splash = SplashScreen()\n    splash.show()\n    window = HomeWindow()\n    def show_main_window():\n        splash.close()\n        window.show()\n    QTimer.singleShot(\n        2500,",
+        "peekOfCode": "def main():\n    app = QApplication(sys.argv)\n    # splash = SplashScreen()\n    #splash.show()\n    window = HomeWindow()\n    # def show_main_window():\n        # splash.close()\n    window.show()\n    # QTimer.singleShot(\n    #     2500,",
         "detail": "main",
         "documentation": {}
     }
