@@ -63,14 +63,14 @@ QFrame[variant="surface"] {{
 
 QLabel[variant="title"] {{
     color: {theme.TEXT_PRIMARY};
-    font-size: {theme.TITLE_SIZE}px;
+    font-size: {theme.FONT_TITLE}px;
     font-weight: 700;
     background: transparent;
 }}
 
 QLabel[variant="subtitle"] {{
     color: {theme.TEXT_SECONDARY};
-    font-size: {theme.SUBTITLE_SIZE}px;
+    font-size: {theme.FONT_SUBTITLE}px;
     background: transparent;
 }}
 

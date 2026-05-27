@@ -1,147 +1,34 @@
 from typing import Final
 
-from PySide6.QtCore import Qt
-from PySide6.QtGui import QPixmap
+from PySide6.QtCore import (
+    Qt,
+    QEvent,
+    QObject
+)
 from PySide6.QtWidgets import (
-    QFrame,
-    QGraphicsDropShadowEffect,
     QHBoxLayout,
-    QLabel,
     QVBoxLayout,
     QWidget,
+    QScrollArea
 )
+from PySide6.QtGui import QWheelEvent
+
 
 from app.ui.styles.helpers import set_variant
 from app.ui.styles.stylesheet import APP_STYLE
 from app.ui.widgets.top_bar_home_screen import TopBar
 from app.ui.assets.images import Images
+from app.ui.widgets.image_card_card_screen import ImageCard
+from app.ui.styles.utilities import tw
+
+image_paths: list[str] = [
+str(Images.IMAGE1.path),
+str(Images.IMAGE2.path),
+str(Images.IMAGE3.path),
+str(Images.IMAGE4.path)
+]
 
 
-class ImageCard(QFrame):
-    CARD_WIDTH: Final[int] = 320
-    CARD_HEIGHT: Final[int] = 420
-    IMAGE_HEIGHT: Final[int] = 250
-
-    def __init__(
-        self,
-        image_path: str,
-        title: str,
-        subtitle: str,
-    ) -> None:
-        super().__init__()
-
-        self.image_path: str = image_path
-        self.title_text: str = title
-        self.subtitle_text: str = subtitle
-
-        set_variant(self, "card")
-
-        self.setFixedSize(
-            self.CARD_WIDTH,
-            self.CARD_HEIGHT,
-        )
-
-        self.setup_ui()
-        self.setup_shadow()
-
-    def setup_ui(self) -> None:
-        layout = QVBoxLayout(self)
-
-        layout.setContentsMargins(
-            20,
-            20,
-            20,
-            20,
-        )
-
-        layout.setSpacing(16)
-
-        image_label = self._build_image()
-
-        title_label = QLabel(
-            self.title_text,
-        )
-        set_variant(
-            title_label,
-            "title",
-        )
-
-        subtitle_label = QLabel(
-            self.subtitle_text,
-        )
-        set_variant(
-            subtitle_label,
-            "subtitle",
-        )
-
-        text_layout = QVBoxLayout()
-        text_layout.setSpacing(6)
-
-        text_layout.addWidget(
-            title_label,
-        )
-
-        text_layout.addWidget(
-            subtitle_label,
-        )
-
-        layout.addWidget(
-            image_label,
-        )
-
-        layout.addLayout(
-            text_layout,
-        )
-
-        layout.addStretch()
-
-    def _build_image(self) -> QLabel:
-        image_label = QLabel()
-
-        set_variant(
-            image_label,
-            "image",
-        )
-
-        image_label.setFixedHeight(
-            self.IMAGE_HEIGHT,
-        )
-
-        image_label.setAlignment(
-            Qt.AlignmentFlag.AlignCenter,
-        )
-
-        pixmap = QPixmap(
-            self.image_path,
-        )
-
-        if not pixmap.isNull():
-            image_label.setPixmap(
-                pixmap.scaled(
-                    500,
-                    300,
-                    Qt.AspectRatioMode.KeepAspectRatioByExpanding,
-                    Qt.TransformationMode.SmoothTransformation,
-                )
-            )
-
-        return image_label
-
-    def setup_shadow(self) -> None:
-        shadow = QGraphicsDropShadowEffect(
-            self,
-        )
-
-        shadow.setBlurRadius(50)
-        shadow.setOffset(0, 12)
-
-        shadow.setColor(
-            Qt.GlobalColor.black,
-        )
-
-        self.setGraphicsEffect(
-            shadow,
-        )
 
 class CardWindow(QWidget):
     WINDOW_WIDTH: Final[int] = 1080
@@ -162,13 +49,29 @@ class CardWindow(QWidget):
             | Qt.WindowType.Window
         )
 
-        self.setProperty("variant", "window")
+        set_variant(self,"window")
 
         self.setStyleSheet(APP_STYLE)
 
         self.setup_ui()
 
     def setup_ui(self) -> None:
+
+        cards: list[ImageCard] = [
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
+        ]
+
         # ---------------------------
         # ROOT WINDOW LAYOUT
         # ---------------------------
@@ -180,7 +83,6 @@ class CardWindow(QWidget):
         # FULL AREA CONTAINER
         # ---------------------------
         container = QWidget()
-        container.setProperty("variant", "test1")
 
         root = QVBoxLayout(container)
         root.setContentsMargins(0, 0, 0, 0)
@@ -190,39 +92,58 @@ class CardWindow(QWidget):
         # ---------------------------
         # TOP BAR
         # ---------------------------
-        top_bar = TopBar(container)
+        top_bar = TopBar(self)
         root.addWidget(top_bar)
 
         # ---------------------------
-        # CONTENT AREA
+        # CONTENT SCROLL AREA
         # ---------------------------
-        content_layout = QHBoxLayout()
-        content_layout.setContentsMargins(0,0,0,0)
+        self.scroll_area = QScrollArea(container)
+        self.scroll_area.setWidgetResizable(True)
+
+        # ❌ remove duplicate line (you had setHorizontalScrollBarPolicy twice)
+        self.scroll_area.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        self.scroll_area.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+
+        self.scroll_area.setFrameShape(QScrollArea.Shape.NoFrame)
+
+        # dynamic height based on first card
+        self.scroll_area.setFixedHeight(cards[0].sizeHint().height() + 120)
+
+        content_area = QWidget()
+        content_area.setStyleSheet(tw("bg-surface-1"))
+
+        content_layout = QHBoxLayout(content_area)
+        content_layout.setContentsMargins(30, 0, 30, 0)
         content_layout.setSpacing(30)
 
-        image_paths: list[str] = [
-            str(Images.IMAGE1.path),
-            str(Images.IMAGE2.path),
-            str(Images.IMAGE3.path),
-            str(Images.IMAGE4.path)
-        ]
-
-        cards: list[ImageCard] = [
-            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
-            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
-            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
-        ]
-
-        content_layout.addStretch()
+        content_layout.setAlignment(
+            Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignVCenter
+        )
 
         for card in cards:
             content_layout.addWidget(card)
 
-        content_layout.addStretch()
+        self.scroll_area.setWidget(content_area)
 
-        root.addLayout(content_layout)
+        # enable wheel → horizontal scroll
+        self.scroll_area.viewport().installEventFilter(self)
+
+        root.addWidget(self.scroll_area)
 
         # ---------------------------
         # ATTACH CONTAINER TO WINDOW
         # ---------------------------
         window_layout.addWidget(container)
+
+    def eventFilter(self, obj: QObject, event: QEvent) -> bool:
+        if obj == self.scroll_area.viewport() and event.type() == QEvent.Type.Wheel:
+            if isinstance(event, QWheelEvent):
+                delta: int = event.angleDelta().y()
+
+                bar = self.scroll_area.horizontalScrollBar()
+                bar.setValue(bar.value() - delta)
+
+                return True  # block default vertical scroll
+
+        return super().eventFilter(obj, event)

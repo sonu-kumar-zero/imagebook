@@ -11,6 +11,7 @@ class Icons(StrEnum):
     MINIMIZE = "minimize.svg"
     MAXIMIZE = "maximize.svg"
     MENU = "menu.svg"
+    MAXIMIZE_MID = "maximize_mid.svg"
 
     @property
     def path(self) -> Path:

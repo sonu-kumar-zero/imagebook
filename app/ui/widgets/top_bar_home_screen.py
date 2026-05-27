@@ -1,5 +1,9 @@
 from PySide6.QtCore import Qt, QPoint
-from PySide6.QtGui import QMouseEvent
+from PySide6.QtGui import (
+    QMouseEvent,
+    QGuiApplication,
+    QIcon
+    )
 from PySide6.QtWidgets import (
     QFrame,
     QHBoxLayout,
@@ -10,6 +14,8 @@ from PySide6.QtWidgets import (
 
 from app.ui.assets.icons import Icons
 from app.ui.widgets.window_control_button import WindowControlButton
+from app.ui.styles.helpers import set_variant
+from app.ui.styles.utilities import tw
 
 
 class TopBar(QFrame):
@@ -22,6 +28,7 @@ class TopBar(QFrame):
         super().__init__(parent)
 
         self.parent_window = parent
+        self.max_window_size: bool = False
         self.drag_position = QPoint()
         self.setContentsMargins(0, 0, 0, 0)
         self.setFrameShape(QFrame.Shape.NoFrame)
@@ -48,7 +55,8 @@ class TopBar(QFrame):
         menu_button = WindowControlButton(Icons.MENU.path)
 
         title_label = QLabel("ImageBook")
-        title_label.setProperty("variant", "title")
+        set_variant(title_label, "title")
+        title_label.setStyleSheet(tw("text-accent"))
 
         # Spacer
         spacer = QWidget()
@@ -59,7 +67,7 @@ class TopBar(QFrame):
 
         # Right controls
         minimize_button = WindowControlButton(Icons.MINIMIZE.path)
-        maximize_button = WindowControlButton(Icons.MAXIMIZE.path)
+        self.maximize_button = WindowControlButton(Icons.MAXIMIZE.path)
         close_button = WindowControlButton(Icons.CROSS.path)
 
         # Safe parent checks
@@ -67,14 +75,14 @@ class TopBar(QFrame):
             minimize_button.clicked.connect(self.parent_window.showMinimized)
             close_button.clicked.connect(self.parent_window.close)
 
-        maximize_button.clicked.connect(self.toggle_maximize)
+        self.maximize_button.clicked.connect(self.toggle_maximize)
 
         layout.addWidget(menu_button)
         layout.addWidget(title_label)
         layout.addWidget(spacer)
 
         layout.addWidget(minimize_button)
-        layout.addWidget(maximize_button)
+        layout.addWidget(self.maximize_button)
         layout.addWidget(close_button)
 
     def toggle_maximize(self) -> None:
@@ -82,26 +90,40 @@ class TopBar(QFrame):
             return
 
         if self.parent_window.isMaximized():
+            self.max_window_size = False
             self.parent_window.showNormal()
+            self.maximize_button.setIcon(QIcon(str(Icons.MAXIMIZE.path)))
         else:
+            self.max_window_size = True
             self.parent_window.showMaximized()
+            self.maximize_button.setIcon(QIcon(str(Icons.MAXIMIZE_MID.path)))
 
     # -------------------------
     # DRAG LOGIC (FIXED)
     # -------------------------
-    def mousePressEvent(self, event: QMouseEvent) -> None:
+    def mousePressEvent(self, event: QMouseEvent):
         if event.button() == Qt.MouseButton.LeftButton:
             self.drag_position = event.globalPosition().toPoint()
+            self.window_position = self.window().pos()
 
-    def mouseMoveEvent(self, event: QMouseEvent) -> None:
-        if not self.parent_window:
+            self.is_dragging = True
+
+    def mouseMoveEvent(self, event: QMouseEvent):
+        if not self.is_dragging:
             return
 
         if event.buttons() & Qt.MouseButton.LeftButton:
-            delta = event.globalPosition().toPoint() - self.drag_position
+            self.maximize_button.setIcon(QIcon(str(Icons.MAXIMIZE.path)))
+            platform = QGuiApplication.platformName()
 
-            self.parent_window.move(
-                self.parent_window.pos() + delta
-            )
+            # Wayland → use native drag
+            if platform == "wayland":
+                self.window().windowHandle().startSystemMove()
+                self.is_dragging = False
+                return
 
-            self.drag_position = event.globalPosition().toPoint()
+            # X11 / Windows / macOS → manual move
+            current = event.globalPosition().toPoint()
+            delta = current - self.drag_position
+
+            self.window().move(self.window_position + delta)
