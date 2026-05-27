@@ -160,6 +160,30 @@
         "documentation": {}
     },
     {
+        "label": "QObject",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
         "label": "Property",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
@@ -177,6 +201,14 @@
     },
     {
         "label": "QEasingCurve",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QSize",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
         "isExtraImport": true,
@@ -337,6 +369,30 @@
     },
     {
         "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QScrollArea",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -528,14 +584,6 @@
         "documentation": {}
     },
     {
-        "label": "QHBoxLayout",
-        "importPath": "PySide6.QtWidgets",
-        "description": "PySide6.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PySide6.QtWidgets",
-        "documentation": {}
-    },
-    {
         "label": "QVBoxLayout",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -545,14 +593,6 @@
     },
     {
         "label": "QWidget",
-        "importPath": "PySide6.QtWidgets",
-        "description": "PySide6.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PySide6.QtWidgets",
-        "documentation": {}
-    },
-    {
-        "label": "QScrollArea",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -664,6 +704,14 @@
         "documentation": {}
     },
     {
+        "label": "QWheelEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
         "label": "QPixmap",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
@@ -736,11 +784,19 @@
         "documentation": {}
     },
     {
-        "label": "set_variant",
-        "importPath": "app.ui.styles.helpers",
-        "description": "app.ui.styles.helpers",
+        "label": "ImageCard",
+        "importPath": "app.ui.widgets.image_card_card_screen",
+        "description": "app.ui.widgets.image_card_card_screen",
         "isExtraImport": true,
-        "detail": "app.ui.styles.helpers",
+        "detail": "app.ui.widgets.image_card_card_screen",
+        "documentation": {}
+    },
+    {
+        "label": "ImageCard",
+        "importPath": "app.ui.widgets.image_card_card_screen",
+        "description": "app.ui.widgets.image_card_card_screen",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.image_card_card_screen",
         "documentation": {}
     },
     {
@@ -760,11 +816,11 @@
         "documentation": {}
     },
     {
-        "label": "tw",
-        "importPath": "app.ui.styles.utilities",
-        "description": "app.ui.styles.utilities",
+        "label": "set_variant",
+        "importPath": "app.ui.styles.helpers",
+        "description": "app.ui.styles.helpers",
         "isExtraImport": true,
-        "detail": "app.ui.styles.utilities",
+        "detail": "app.ui.styles.helpers",
         "documentation": {}
     },
     {
@@ -824,11 +880,11 @@
         "documentation": {}
     },
     {
-        "label": "ImageCard",
-        "importPath": "app.ui.widgets.image_card_card_screen",
-        "description": "app.ui.widgets.image_card_card_screen",
+        "label": "HorizontalCardScrollArea",
+        "importPath": "app.ui.widgets.card_window.horizontal_card_scroll_area",
+        "description": "app.ui.widgets.card_window.horizontal_card_scroll_area",
         "isExtraImport": true,
-        "detail": "app.ui.widgets.image_card_card_screen",
+        "detail": "app.ui.widgets.card_window.horizontal_card_scroll_area",
         "documentation": {}
     },
     {
@@ -1012,6 +1068,15 @@
         "description": "app.ui.styles.utilities",
         "peekOfCode": "def tw(*classes: UtilityClass) -> str:\n    \"\"\"\n    Tailwind-style utility combiner.\n    \"\"\"\n    return \"\\n\".join(\n        UTILITIES[class_name]\n        for class_name in classes\n    )",
         "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "HorizontalCardScrollArea",
+        "kind": 6,
+        "importPath": "app.ui.widgets.card_window.horizontal_card_scroll_area",
+        "description": "app.ui.widgets.card_window.horizontal_card_scroll_area",
+        "peekOfCode": "class HorizontalCardScrollArea(QScrollArea):\n    def __init__(self, cards: list[ImageCard], parent: QWidget | None = None, index: int = 0):\n        super().__init__(parent)\n        self.cards = cards\n        self.setWidgetResizable(True)\n        self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)\n        self.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)\n        self.setFrameShape(QScrollArea.Shape.NoFrame)\n        self._build_ui()\n        self.viewport().installEventFilter(self)",
+        "detail": "app.ui.widgets.card_window.horizontal_card_scroll_area",
         "documentation": {}
     },
     {

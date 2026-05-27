@@ -6,10 +6,8 @@ from PySide6.QtCore import (
     QObject
 )
 from PySide6.QtWidgets import (
-    QHBoxLayout,
     QVBoxLayout,
     QWidget,
-    QScrollArea
 )
 from PySide6.QtGui import QWheelEvent
 
@@ -19,7 +17,7 @@ from app.ui.styles.stylesheet import APP_STYLE
 from app.ui.widgets.top_bar_home_screen import TopBar
 from app.ui.assets.images import Images
 from app.ui.widgets.image_card_card_screen import ImageCard
-from app.ui.styles.utilities import tw
+from app.ui.widgets.card_window.horizontal_card_scroll_area import HorizontalCardScrollArea
 
 image_paths: list[str] = [
 str(Images.IMAGE1.path),
@@ -72,6 +70,36 @@ class CardWindow(QWidget):
             ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
         ]
 
+        cards1: list[ImageCard] = [
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
+        ]
+
+        cards2: list[ImageCard] = [
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
+        ]
+
         # ---------------------------
         # ROOT WINDOW LAYOUT
         # ---------------------------
@@ -98,38 +126,13 @@ class CardWindow(QWidget):
         # ---------------------------
         # CONTENT SCROLL AREA
         # ---------------------------
-        self.scroll_area = QScrollArea(container)
-        self.scroll_area.setWidgetResizable(True)
-
-        # ❌ remove duplicate line (you had setHorizontalScrollBarPolicy twice)
-        self.scroll_area.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
-        self.scroll_area.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
-
-        self.scroll_area.setFrameShape(QScrollArea.Shape.NoFrame)
-
-        # dynamic height based on first card
-        self.scroll_area.setFixedHeight(cards[0].sizeHint().height() + 120)
-
-        content_area = QWidget()
-        content_area.setStyleSheet(tw("bg-surface-1"))
-
-        content_layout = QHBoxLayout(content_area)
-        content_layout.setContentsMargins(30, 0, 30, 0)
-        content_layout.setSpacing(30)
-
-        content_layout.setAlignment(
-            Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignVCenter
-        )
-
-        for card in cards:
-            content_layout.addWidget(card)
-
-        self.scroll_area.setWidget(content_area)
-
-        # enable wheel → horizontal scroll
-        self.scroll_area.viewport().installEventFilter(self)
-
+        self.scroll_area = HorizontalCardScrollArea(cards=cards, index=0)
+        self.scroll_area1 = HorizontalCardScrollArea(cards=cards1, index=1)
+        self.scroll_area2 = HorizontalCardScrollArea(cards=cards2, index=2)
         root.addWidget(self.scroll_area)
+        root.addWidget(self.scroll_area1)
+        root.addWidget(self.scroll_area2)
+        
 
         # ---------------------------
         # ATTACH CONTAINER TO WINDOW

@@ -4,6 +4,7 @@ from PySide6.QtCore import (
     Property,
     QPropertyAnimation,
     QEasingCurve,
+    QSize
 )
 from PySide6.QtGui import QPixmap, QEnterEvent
 from PySide6.QtWidgets import (
@@ -112,6 +113,9 @@ class ImageCard(QFrame):
 
         # IMPORTANT: forces smoother repaint cycle
         self.image_label.update()
+
+    def sizeHint(self) -> QSize:
+        return QSize(self.CARD_WIDTH, self.CARD_WIDTH)
 
     imageScale = Property(float, get_imageScale, set_imageScale)
 
