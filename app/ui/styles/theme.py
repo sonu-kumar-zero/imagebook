@@ -6,6 +6,7 @@ from dataclasses import dataclass
 @dataclass(frozen=True, slots=True)
 class Theme:
     APP_BG: str = "#0F1117"
+    TEST_BG: str = "#ff0000"
 
     CARD_BG: str = "rgba(24,24,32,230)"
     CARD_BG_HOVER: str = "rgba(34,34,44,240)"

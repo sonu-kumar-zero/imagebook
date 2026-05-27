@@ -13,7 +13,8 @@ from PySide6.QtWidgets import (
 
 from app.ui.styles.helpers import set_variant
 from app.ui.styles.stylesheet import APP_STYLE
-from app.utils.paths import ASSETS_DIR
+from app.ui.widgets.top_bar_home_screen import TopBar
+from app.ui.assets.images import Images
 
 
 class ImageCard(QFrame):
@@ -142,7 +143,6 @@ class ImageCard(QFrame):
             shadow,
         )
 
-
 class CardWindow(QWidget):
     WINDOW_WIDTH: Final[int] = 1080
     WINDOW_HEIGHT: Final[int] = 720
@@ -150,79 +150,79 @@ class CardWindow(QWidget):
     def __init__(self) -> None:
         super().__init__()
 
-        self.setWindowTitle(
-            "Premium Card UI",
-        )
+        self.setWindowTitle("Premium Card UI")
 
         self.resize(
             self.WINDOW_WIDTH,
             self.WINDOW_HEIGHT,
         )
 
-        self.setStyleSheet(
-            APP_STYLE,
+        self.setWindowFlags(
+            Qt.WindowType.FramelessWindowHint
+            | Qt.WindowType.Window
         )
+
+        self.setProperty("variant", "window")
+
+        self.setStyleSheet(APP_STYLE)
 
         self.setup_ui()
 
     def setup_ui(self) -> None:
-        layout = QHBoxLayout(self)
+        # ---------------------------
+        # ROOT WINDOW LAYOUT
+        # ---------------------------
+        window_layout = QVBoxLayout(self)
+        window_layout.setContentsMargins(0, 0, 0, 0)
+        window_layout.setSpacing(0)
 
-        layout.setContentsMargins(
-            40,
-            40,
-            40,
-            40,
-        )
+        # ---------------------------
+        # FULL AREA CONTAINER
+        # ---------------------------
+        container = QWidget()
+        container.setProperty("variant", "test1")
 
-        layout.setSpacing(30)
+        root = QVBoxLayout(container)
+        root.setContentsMargins(0, 0, 0, 0)
+        root.setSpacing(0)
+        root.setAlignment(Qt.AlignmentFlag.AlignTop)
+
+        # ---------------------------
+        # TOP BAR
+        # ---------------------------
+        top_bar = TopBar(container)
+        root.addWidget(top_bar)
+
+        # ---------------------------
+        # CONTENT AREA
+        # ---------------------------
+        content_layout = QHBoxLayout()
+        content_layout.setContentsMargins(0,0,0,0)
+        content_layout.setSpacing(30)
 
         image_paths: list[str] = [
-            str(
-                ASSETS_DIR
-                / "images"
-                / "image1_mountain.jpg"
-            ),
-            str(
-                ASSETS_DIR
-                / "images"
-                / "image2_home.jpg"
-            ),
-            str(
-                ASSETS_DIR
-                / "images"
-                / "image3_cat.jpg"
-            ),
-            str(
-                ASSETS_DIR
-                / "images"
-                / "image4_river.jpg"
-            ),
+            str(Images.IMAGE1.path),
+            str(Images.IMAGE2.path),
+            str(Images.IMAGE3.path),
+            str(Images.IMAGE4.path)
         ]
 
         cards: list[ImageCard] = [
-            ImageCard(
-                image_paths[0],
-                "Mountain Lake",
-                "Peaceful reflection in nature",
-            ),
-            ImageCard(
-                image_paths[1],
-                "Cyber City",
-                "Premium futuristic design",
-            ),
-            ImageCard(
-                image_paths[2],
-                "Forest View",
-                "Deep calm and nature vibes",
-            ),
+            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
+            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
+            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
         ]
 
-        layout.addStretch()
+        content_layout.addStretch()
 
         for card in cards:
-            layout.addWidget(
-                card,
-            )
+            content_layout.addWidget(card)
 
-        layout.addStretch()
+        content_layout.addStretch()
+
+        root.addLayout(content_layout)
+
+        # ---------------------------
+        # ATTACH CONTAINER TO WINDOW
+        # ---------------------------
+        window_layout.addWidget(container)

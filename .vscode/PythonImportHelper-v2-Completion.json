@@ -1,5 +1,93 @@
 [
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Final",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Final",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Final",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Final",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "QObject",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
@@ -9,6 +97,30 @@
     },
     {
         "label": "Signal",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QPoint",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QSize",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
         "isExtraImport": true,
@@ -61,6 +173,22 @@
         "description": "watchdog.events",
         "isExtraImport": true,
         "detail": "watchdog.events",
+        "documentation": {}
+    },
+    {
+        "label": "StrEnum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "StrEnum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -153,6 +281,62 @@
     },
     {
         "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFrame",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSizePolicy",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -296,46 +480,6 @@
         "documentation": {}
     },
     {
-        "label": "Final",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Literal",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Final",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Final",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Final",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
         "label": "theme",
         "importPath": "app.ui.styles.theme",
         "description": "app.ui.styles.theme",
@@ -360,6 +504,22 @@
         "documentation": {}
     },
     {
+        "label": "QMouseEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QIcon",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
         "label": "QPixmap",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
@@ -373,6 +533,22 @@
         "description": "PySide6.QtGui",
         "isExtraImport": true,
         "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "Icons",
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.icons",
+        "documentation": {}
+    },
+    {
+        "label": "WindowControlButton",
+        "importPath": "app.ui.widgets.window_control_button",
+        "description": "app.ui.widgets.window_control_button",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.window_control_button",
         "documentation": {}
     },
     {
@@ -392,19 +568,19 @@
         "documentation": {}
     },
     {
-        "label": "ASSETS_DIR",
-        "importPath": "app.utils.paths",
-        "description": "app.utils.paths",
+        "label": "TopBar",
+        "importPath": "app.ui.widgets.top_bar_home_screen",
+        "description": "app.ui.widgets.top_bar_home_screen",
         "isExtraImport": true,
-        "detail": "app.utils.paths",
+        "detail": "app.ui.widgets.top_bar_home_screen",
         "documentation": {}
     },
     {
-        "label": "ASSETS_DIR",
-        "importPath": "app.utils.paths",
-        "description": "app.utils.paths",
+        "label": "Images",
+        "importPath": "app.ui.assets.images",
+        "description": "app.ui.assets.images",
         "isExtraImport": true,
-        "detail": "app.utils.paths",
+        "detail": "app.ui.assets.images",
         "documentation": {}
     },
     {
@@ -440,11 +616,11 @@
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "ASSETS_DIR",
+        "importPath": "app.utils.paths",
+        "description": "app.utils.paths",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "app.utils.paths",
         "documentation": {}
     },
     {
@@ -465,6 +641,15 @@
         "documentation": {}
     },
     {
+        "label": "dprint",
+        "kind": 2,
+        "importPath": "app.core.logger",
+        "description": "app.core.logger",
+        "peekOfCode": "def dprint(\n    file: str,\n    *args: Any,\n) -> None:\n    relative_path = (\n        Path(file)\n        .resolve()\n        .relative_to(Path.cwd())\n    )\n    print(",
+        "detail": "app.core.logger",
+        "documentation": {}
+    },
+    {
         "label": "WatcherHandler",
         "kind": 6,
         "importPath": "app.services.file_watcher",
@@ -480,6 +665,42 @@
         "description": "app.services.file_watcher",
         "peekOfCode": "class FileWatcher(QObject):\n    file_changed = Signal(str)\n    def __init__(self, path):\n        super().__init__()\n        self.path = path\n        self.observer = Observer()\n        self.handler = WatcherHandler(\n            self.emit_change\n        )\n    def emit_change(self, path):",
         "detail": "app.services.file_watcher",
+        "documentation": {}
+    },
+    {
+        "label": "Icons",
+        "kind": 6,
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "peekOfCode": "class Icons(StrEnum):\n    CROSS = \"cross.svg\"\n    MINIMIZE = \"minimize.svg\"\n    MAXIMIZE = \"maximize.svg\"\n    MENU = \"menu.svg\"\n    @property\n    def path(self) -> Path:\n        return ICON_DIR / self.value",
+        "detail": "app.ui.assets.icons",
+        "documentation": {}
+    },
+    {
+        "label": "ICON_DIR",
+        "kind": 5,
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "peekOfCode": "ICON_DIR = (\n    Path(__file__).parent / \"icons\"\n)\nclass Icons(StrEnum):\n    CROSS = \"cross.svg\"\n    MINIMIZE = \"minimize.svg\"\n    MAXIMIZE = \"maximize.svg\"\n    MENU = \"menu.svg\"\n    @property\n    def path(self) -> Path:",
+        "detail": "app.ui.assets.icons",
+        "documentation": {}
+    },
+    {
+        "label": "Images",
+        "kind": 6,
+        "importPath": "app.ui.assets.images",
+        "description": "app.ui.assets.images",
+        "peekOfCode": "class Images(StrEnum):\n    IMAGE1 = \"image1_mountain.jpg\"\n    IMAGE2 = \"image2_home.jpg\"\n    IMAGE3 = \"image3_cat.jpg\"\n    IMAGE4 = \"image4_river.jpg\"\n    @property\n    def path(self) -> Path:\n        return IMAGES_DIR / self.value",
+        "detail": "app.ui.assets.images",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGES_DIR",
+        "kind": 5,
+        "importPath": "app.ui.assets.images",
+        "description": "app.ui.assets.images",
+        "peekOfCode": "IMAGES_DIR = (\n    Path(__file__).parent / \"images\"\n)\nclass Images(StrEnum):\n    IMAGE1 = \"image1_mountain.jpg\"\n    IMAGE2 = \"image2_home.jpg\"\n    IMAGE3 = \"image3_cat.jpg\"\n    IMAGE4 = \"image4_river.jpg\"\n    @property\n    def path(self) -> Path:",
+        "detail": "app.ui.assets.images",
         "documentation": {}
     },
     {
@@ -505,7 +726,7 @@
         "kind": 6,
         "importPath": "app.ui.styles.theme",
         "description": "app.ui.styles.theme",
-        "peekOfCode": "class Theme:\n    APP_BG: str = \"#0F1117\"\n    CARD_BG: str = \"rgba(24,24,32,230)\"\n    CARD_BG_HOVER: str = \"rgba(34,34,44,240)\"\n    BORDER_SOFT: str = \"rgba(255,255,255,0.08)\"\n    BORDER_SOFT_HOVER: str = \"rgba(255,255,255,0.14)\"\n    TEXT_PRIMARY: str = \"white\"\n    TEXT_SECONDARY: str = \"rgba(255,255,255,0.65)\"\n    RADIUS_CARD: int = 28\n    RADIUS_IMAGE: int = 22",
+        "peekOfCode": "class Theme:\n    APP_BG: str = \"#0F1117\"\n    TEST_BG: str = \"#ff0000\"\n    CARD_BG: str = \"rgba(24,24,32,230)\"\n    CARD_BG_HOVER: str = \"rgba(34,34,44,240)\"\n    BORDER_SOFT: str = \"rgba(255,255,255,0.08)\"\n    BORDER_SOFT_HOVER: str = \"rgba(255,255,255,0.14)\"\n    TEXT_PRIMARY: str = \"white\"\n    TEXT_SECONDARY: str = \"rgba(255,255,255,0.65)\"\n    RADIUS_CARD: int = 28",
         "detail": "app.ui.styles.theme",
         "documentation": {}
     },
@@ -573,6 +794,24 @@
         "documentation": {}
     },
     {
+        "label": "TopBar",
+        "kind": 6,
+        "importPath": "app.ui.widgets.top_bar_home_screen",
+        "description": "app.ui.widgets.top_bar_home_screen",
+        "peekOfCode": "class TopBar(QFrame):\n    HEIGHT = 70  # realistic UI height\n    def __init__(\n        self,\n        parent: QWidget | None = None,\n    ) -> None:\n        super().__init__(parent)\n        self.parent_window = parent\n        self.drag_position = QPoint()\n        self.setContentsMargins(0, 0, 0, 0)",
+        "detail": "app.ui.widgets.top_bar_home_screen",
+        "documentation": {}
+    },
+    {
+        "label": "WindowControlButton",
+        "kind": 6,
+        "importPath": "app.ui.widgets.window_control_button",
+        "description": "app.ui.widgets.window_control_button",
+        "peekOfCode": "class WindowControlButton(QPushButton):\n    def __init__(\n        self,\n        icon_path: Path,\n        parent: QWidget | None = None,\n    ) -> None:\n        super().__init__(parent)\n        self.setProperty(\n            \"variant\",\n            \"window-control\",",
+        "detail": "app.ui.widgets.window_control_button",
+        "documentation": {}
+    },
+    {
         "label": "ImageCard",
         "kind": 6,
         "importPath": "app.ui.windows.card_window",
@@ -586,7 +825,7 @@
         "kind": 6,
         "importPath": "app.ui.windows.card_window",
         "description": "app.ui.windows.card_window",
-        "peekOfCode": "class CardWindow(QWidget):\n    WINDOW_WIDTH: Final[int] = 1080\n    WINDOW_HEIGHT: Final[int] = 720\n    def __init__(self) -> None:\n        super().__init__()\n        self.setWindowTitle(\n            \"Premium Card UI\",\n        )\n        self.resize(\n            self.WINDOW_WIDTH,",
+        "peekOfCode": "class CardWindow(QWidget):\n    WINDOW_WIDTH: Final[int] = 1080\n    WINDOW_HEIGHT: Final[int] = 720\n    def __init__(self) -> None:\n        super().__init__()\n        self.setWindowTitle(\"Premium Card UI\")\n        self.resize(\n            self.WINDOW_WIDTH,\n            self.WINDOW_HEIGHT,\n        )",
         "detail": "app.ui.windows.card_window",
         "documentation": {}
     },
