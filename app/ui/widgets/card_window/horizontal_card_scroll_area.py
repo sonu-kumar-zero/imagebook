@@ -1,50 +1,46 @@
-from PySide6.QtCore import Qt, QEvent, QObject
-from PySide6.QtWidgets import QScrollArea, QWidget, QHBoxLayout
-from PySide6.QtGui import QWheelEvent
+from __future__ import annotations
+
+from PySide6.QtCore import Qt
+from PySide6.QtWidgets import QWidget
+
 from app.ui.widgets.image_card_card_screen import ImageCard
+from app.ui.widgets.kscroll_area import KScrollArea
 
 
-class HorizontalCardScrollArea(QScrollArea):
-    def __init__(self, cards: list[ImageCard], parent: QWidget | None = None, index: int = 0):
-        super().__init__(parent)
-
-        self.cards = cards
-
-        self.setWidgetResizable(True)
-        self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
-        self.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
-        self.setFrameShape(QScrollArea.Shape.NoFrame)
-
-        self._build_ui()
-        self.viewport().installEventFilter(self)
-
-    def _build_ui(self) -> None:
-        content = QWidget(self)
-
-        layout = QHBoxLayout(content)
-        layout.setContentsMargins(30, 0, 30, 0)
-        layout.setSpacing(30)
-        layout.setAlignment(
-            Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignVCenter
+class HorizontalCardScrollArea(KScrollArea):
+    def __init__(
+        self,
+        cards: list[ImageCard],
+        parent: QWidget | None = None,
+        index: int = 0,
+    ) -> None:
+        super().__init__(
+            direction="horizontal",
+            parent=parent,
+            spacing=30,
+            margins=(30, 0, 30, 0),
+            alignment=(
+                Qt.AlignmentFlag.AlignLeft
+                | Qt.AlignmentFlag.AlignVCenter
+            ),
         )
 
+        self.cards: list[ImageCard] = cards
+        self.index: int = index
+
+        self._build_cards()
+        self._set_dynamic_height()
+
+    def _build_cards(self) -> None:
         for card in self.cards:
-            layout.addWidget(card)
+            self.addWidget(card)
 
-        content.setLayout(layout)
-        self.setWidget(content)
+    def _set_dynamic_height(self) -> None:
+        if not self.cards:
+            return
 
-        # dynamic height based on first card
-        if self.cards:
-            self.setFixedHeight(self.cards[0].sizeHint().height() + 120)
+        first_card: ImageCard = self.cards[0]
 
-    def eventFilter(self, obj: QObject, event: QEvent) -> bool:
-        if obj == self.viewport() and event.type() == QEvent.Type.Wheel:
-            if isinstance(event, QWheelEvent):
-                delta = event.angleDelta().y()
-                self.horizontalScrollBar().setValue(
-                    self.horizontalScrollBar().value() - delta
-                )
-                return True
-
-        return super().eventFilter(obj, event)
+        self.setFixedHeight(
+            first_card.sizeHint().height() + 120
+        )

@@ -18,6 +18,7 @@ from app.ui.widgets.top_bar_home_screen import TopBar
 from app.ui.assets.images import Images
 from app.ui.widgets.image_card_card_screen import ImageCard
 from app.ui.widgets.card_window.horizontal_card_scroll_area import HorizontalCardScrollArea
+from app.ui.widgets.kscroll_area import KScrollArea
 
 image_paths: list[str] = [
 str(Images.IMAGE1.path),
@@ -61,22 +62,9 @@ class CardWindow(QWidget):
             ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
             ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
             ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
-            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
-            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
-            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
-            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
-            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
-            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
-            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
         ]
 
         cards1: list[ImageCard] = [
-            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
-            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
-            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
-            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
-            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
-            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
             ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
             ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
             ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
@@ -91,13 +79,6 @@ class CardWindow(QWidget):
             ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
             ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
             ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
-            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
-            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
-            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
-            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
-            ImageCard(image_paths[0], "Mountain Lake", "Peaceful reflection in nature"),
-            ImageCard(image_paths[1], "Cyber City", "Premium futuristic design"),
-            ImageCard(image_paths[2], "Forest View", "Deep calm and nature vibes"),
         ]
 
         # ---------------------------
@@ -108,36 +89,57 @@ class CardWindow(QWidget):
         window_layout.setSpacing(0)
 
         # ---------------------------
-        # FULL AREA CONTAINER
+        # PAGE SCROLL AREA
         # ---------------------------
-        container = QWidget()
-
-        root = QVBoxLayout(container)
-        root.setContentsMargins(0, 0, 0, 0)
-        root.setSpacing(0)
-        root.setAlignment(Qt.AlignmentFlag.AlignTop)
+        page_scroll = KScrollArea(
+            direction="vertical",
+            spacing=30,
+            margins=(60, 0, 60, 0),
+            alignment=Qt.AlignmentFlag.AlignTop,
+            parent=self,
+            vertical_scrollbar_policy=(
+                Qt.ScrollBarPolicy.ScrollBarAlwaysOn
+            )
+        )
 
         # ---------------------------
         # TOP BAR
         # ---------------------------
         top_bar = TopBar(self)
-        root.addWidget(top_bar)
+        window_layout.addWidget(top_bar)
 
         # ---------------------------
-        # CONTENT SCROLL AREA
+        # HORIZONTAL CARD SECTIONS
         # ---------------------------
-        self.scroll_area = HorizontalCardScrollArea(cards=cards, index=0)
-        self.scroll_area1 = HorizontalCardScrollArea(cards=cards1, index=1)
-        self.scroll_area2 = HorizontalCardScrollArea(cards=cards2, index=2)
-        root.addWidget(self.scroll_area)
-        root.addWidget(self.scroll_area1)
-        root.addWidget(self.scroll_area2)
-        
+        scroll_area = HorizontalCardScrollArea(
+            cards=cards,
+            index=0,
+        )
+
+        scroll_area1 = HorizontalCardScrollArea(
+            cards=cards1,
+            index=1,
+        )
+
+        scroll_area2 = HorizontalCardScrollArea(
+            cards=cards2,
+            index=2,
+        )
+
+        page_scroll.addWidget(scroll_area)
+        page_scroll.addWidget(scroll_area1)
+        page_scroll.addWidget(scroll_area2)
 
         # ---------------------------
-        # ATTACH CONTAINER TO WINDOW
+        # ATTACH TO WINDOW
         # ---------------------------
-        window_layout.addWidget(container)
+        window_layout.addWidget(page_scroll)
+
+        # optional instance refs
+        self.page_scroll = page_scroll
+        self.scroll_area = scroll_area
+        self.scroll_area1 = scroll_area1
+        self.scroll_area2 = scroll_area2
 
     def eventFilter(self, obj: QObject, event: QEvent) -> bool:
         if obj == self.scroll_area.viewport() and event.type() == QEvent.Type.Wheel:

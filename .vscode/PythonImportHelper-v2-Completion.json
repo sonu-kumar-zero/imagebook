@@ -112,6 +112,38 @@
         "documentation": {}
     },
     {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeAlias",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeAlias",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Final",
         "importPath": "typing",
         "description": "typing",
@@ -145,22 +177,6 @@
     },
     {
         "label": "Qt",
-        "importPath": "PySide6.QtCore",
-        "description": "PySide6.QtCore",
-        "isExtraImport": true,
-        "detail": "PySide6.QtCore",
-        "documentation": {}
-    },
-    {
-        "label": "QEvent",
-        "importPath": "PySide6.QtCore",
-        "description": "PySide6.QtCore",
-        "isExtraImport": true,
-        "detail": "PySide6.QtCore",
-        "documentation": {}
-    },
-    {
-        "label": "QObject",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
         "isExtraImport": true,
@@ -209,6 +225,38 @@
     },
     {
         "label": "QSize",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
         "isExtraImport": true,
@@ -376,23 +424,7 @@
         "documentation": {}
     },
     {
-        "label": "QScrollArea",
-        "importPath": "PySide6.QtWidgets",
-        "description": "PySide6.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PySide6.QtWidgets",
-        "documentation": {}
-    },
-    {
         "label": "QWidget",
-        "importPath": "PySide6.QtWidgets",
-        "description": "PySide6.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PySide6.QtWidgets",
-        "documentation": {}
-    },
-    {
-        "label": "QHBoxLayout",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -496,6 +528,102 @@
         "documentation": {}
     },
     {
+        "label": "QGridLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFrame",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QScrollArea",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QFrame",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -632,6 +760,38 @@
         "documentation": {}
     },
     {
+        "label": "QMainWindow",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QWidget",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -704,11 +864,59 @@
         "documentation": {}
     },
     {
-        "label": "QWheelEvent",
-        "importPath": "PySide6.QtGui",
-        "description": "PySide6.QtGui",
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
         "isExtraImport": true,
-        "detail": "PySide6.QtGui",
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "ImageCard",
+        "importPath": "app.ui.widgets.image_card_card_screen",
+        "description": "app.ui.widgets.image_card_card_screen",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.image_card_card_screen",
+        "documentation": {}
+    },
+    {
+        "label": "ImageCard",
+        "importPath": "app.ui.widgets.image_card_card_screen",
+        "description": "app.ui.widgets.image_card_card_screen",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.image_card_card_screen",
+        "documentation": {}
+    },
+    {
+        "label": "KScrollArea",
+        "importPath": "app.ui.widgets.kscroll_area",
+        "description": "app.ui.widgets.kscroll_area",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.kscroll_area",
+        "documentation": {}
+    },
+    {
+        "label": "KScrollArea",
+        "importPath": "app.ui.widgets.kscroll_area",
+        "description": "app.ui.widgets.kscroll_area",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.kscroll_area",
         "documentation": {}
     },
     {
@@ -721,6 +929,30 @@
     },
     {
         "label": "QEnterEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QWheelEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QColor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPalette",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
         "isExtraImport": true,
@@ -784,22 +1016,6 @@
         "documentation": {}
     },
     {
-        "label": "ImageCard",
-        "importPath": "app.ui.widgets.image_card_card_screen",
-        "description": "app.ui.widgets.image_card_card_screen",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.image_card_card_screen",
-        "documentation": {}
-    },
-    {
-        "label": "ImageCard",
-        "importPath": "app.ui.widgets.image_card_card_screen",
-        "description": "app.ui.widgets.image_card_card_screen",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.image_card_card_screen",
-        "documentation": {}
-    },
-    {
         "label": "set_variant",
         "importPath": "app.ui.styles.helpers",
         "description": "app.ui.styles.helpers",
@@ -837,6 +1053,14 @@
         "description": "app.ui.styles.utilities",
         "isExtraImport": true,
         "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "PREMIUM_SCROLLBAR_QSS",
+        "importPath": "app.ui.styles.scroll_bar_stylesheet",
+        "description": "app.ui.styles.scroll_bar_stylesheet",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.scroll_bar_stylesheet",
         "documentation": {}
     },
     {
@@ -917,6 +1141,14 @@
         "description": "app.ui.styles.home_style",
         "isExtraImport": true,
         "detail": "app.ui.styles.home_style",
+        "documentation": {}
+    },
+    {
+        "label": "Color",
+        "importPath": "app.ui.widgets.qcolor",
+        "description": "app.ui.widgets.qcolor",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.qcolor",
         "documentation": {}
     },
     {
@@ -1026,6 +1258,15 @@
         "documentation": {}
     },
     {
+        "label": "PREMIUM_SCROLLBAR_QSS",
+        "kind": 5,
+        "importPath": "app.ui.styles.scroll_bar_stylesheet",
+        "description": "app.ui.styles.scroll_bar_stylesheet",
+        "peekOfCode": "PREMIUM_SCROLLBAR_QSS = \"\"\"\n/* =========================\n   VERTICAL SCROLLBAR\n========================= */\nQScrollBar:vertical {\n    background: transparent;\n    width: 10px;\n    margin: 4px 2px 4px 2px;\n    border: none;\n}",
+        "detail": "app.ui.styles.scroll_bar_stylesheet",
+        "documentation": {}
+    },
+    {
         "label": "Theme",
         "kind": 6,
         "importPath": "app.ui.styles.theme",
@@ -1075,7 +1316,7 @@
         "kind": 6,
         "importPath": "app.ui.widgets.card_window.horizontal_card_scroll_area",
         "description": "app.ui.widgets.card_window.horizontal_card_scroll_area",
-        "peekOfCode": "class HorizontalCardScrollArea(QScrollArea):\n    def __init__(self, cards: list[ImageCard], parent: QWidget | None = None, index: int = 0):\n        super().__init__(parent)\n        self.cards = cards\n        self.setWidgetResizable(True)\n        self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)\n        self.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)\n        self.setFrameShape(QScrollArea.Shape.NoFrame)\n        self._build_ui()\n        self.viewport().installEventFilter(self)",
+        "peekOfCode": "class HorizontalCardScrollArea(KScrollArea):\n    def __init__(\n        self,\n        cards: list[ImageCard],\n        parent: QWidget | None = None,\n        index: int = 0,\n    ) -> None:\n        super().__init__(\n            direction=\"horizontal\",\n            parent=parent,",
         "detail": "app.ui.widgets.card_window.horizontal_card_scroll_area",
         "documentation": {}
     },
@@ -1104,6 +1345,42 @@
         "description": "app.ui.widgets.image_card_card_screen",
         "peekOfCode": "class ImageCard(QFrame):\n    CARD_WIDTH: Final[int] = 320\n    CARD_HEIGHT: Final[int] = 420\n    IMAGE_HEIGHT: Final[int] = 250\n    def __init__(self, image_path: str, title: str, subtitle: str) -> None:\n        super().__init__()\n        self.image_path = image_path\n        self.title_text = title\n        self.subtitle_text = subtitle\n        self.setCursor(Qt.CursorShape.PointingHandCursor)",
         "detail": "app.ui.widgets.image_card_card_screen",
+        "documentation": {}
+    },
+    {
+        "label": "LayoutWrapper",
+        "kind": 6,
+        "importPath": "app.ui.widgets.klayout_box",
+        "description": "app.ui.widgets.klayout_box",
+        "peekOfCode": "class LayoutWrapper(QWidget):\n    def __init__(\n        self,\n        *,\n        direction: LayoutDirection = \"vertical\",\n        parent: QWidget | None = None,\n        spacing: int = 0,\n        margins: tuple[int, int, int, int] = (\n            0,\n            0,",
+        "detail": "app.ui.widgets.klayout_box",
+        "documentation": {}
+    },
+    {
+        "label": "GridLayoutWrapper",
+        "kind": 6,
+        "importPath": "app.ui.widgets.klayout_box",
+        "description": "app.ui.widgets.klayout_box",
+        "peekOfCode": "class GridLayoutWrapper(QWidget):\n    def __init__(\n        self,\n        *,\n        parent: QWidget | None = None,\n        spacing: int = 0,\n        margins: tuple[int, int, int, int] = (\n            0,\n            0,\n            0,",
+        "detail": "app.ui.widgets.klayout_box",
+        "documentation": {}
+    },
+    {
+        "label": "KScrollArea",
+        "kind": 6,
+        "importPath": "app.ui.widgets.kscroll_area",
+        "description": "app.ui.widgets.kscroll_area",
+        "peekOfCode": "class KScrollArea(QScrollArea):\n    def __init__(\n        self,\n        *,\n        direction: ScrollDirection = \"vertical\",\n        parent: QWidget | None = None,\n        widget_resizable: bool = True,\n        frame_shape: QFrame.Shape = QFrame.Shape.NoFrame,\n        horizontal_scrollbar_policy: Qt.ScrollBarPolicy = (\n            Qt.ScrollBarPolicy.ScrollBarAlwaysOff",
+        "detail": "app.ui.widgets.kscroll_area",
+        "documentation": {}
+    },
+    {
+        "label": "Color",
+        "kind": 6,
+        "importPath": "app.ui.widgets.qcolor",
+        "description": "app.ui.widgets.qcolor",
+        "peekOfCode": "class Color(QWidget):\n    def __init__(self, color: QColor | str):\n        super().__init__()\n        self.setAutoFillBackground(True)\n        palette = self.palette()\n        palette.setColor(QPalette.ColorRole.Window, QColor(color))\n        self.setPalette(palette)",
+        "detail": "app.ui.widgets.qcolor",
         "documentation": {}
     },
     {
@@ -1149,6 +1426,15 @@
         "description": "app.ui.windows.home_window",
         "peekOfCode": "class HomeWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"ImageBook\")\n        self.resize(1080, 720)\n        self.setup_ui()\n    def setup_ui(self):\n        self.setStyleSheet(HOME_STYLE)\n        root = QVBoxLayout()\n        root.setContentsMargins(40, 30, 40, 30)",
         "detail": "app.ui.windows.home_window",
+        "documentation": {}
+    },
+    {
+        "label": "LayoutWindow",
+        "kind": 6,
+        "importPath": "app.ui.windows.layout_window",
+        "description": "app.ui.windows.layout_window",
+        "peekOfCode": "class LayoutWindow(QMainWindow):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"Layout Window\")\n        layout1 = QHBoxLayout()\n        layout2 = QVBoxLayout()\n        layout3 = QVBoxLayout()\n        layout1.addLayout(layout2)\n        layout1.addLayout(layout3)\n        layout2.addWidget(Color(\"red\"))",
+        "detail": "app.ui.windows.layout_window",
         "documentation": {}
     },
     {
@@ -1210,7 +1496,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def main():\n    app = QApplication(sys.argv)\n    # splash = SplashScreen()\n    #splash.show()\n    window = CardWindow()\n    # def show_main_window():\n        # splash.close()\n    window.show()\n    # QTimer.singleShot(\n    #     2500,",
+        "peekOfCode": "def main():\n    app = QApplication(sys.argv)\n    # splash = SplashScreen()\n    #splash.show()\n    window = CardWindow()\n    # window = LayoutWindow()\n    # def show_main_window():\n        # splash.close()\n    window.show()\n    # QTimer.singleShot(",
         "detail": "main",
         "documentation": {}
     }

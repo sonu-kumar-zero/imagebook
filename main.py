@@ -2,6 +2,7 @@ import sys
 
 # from PySide6.QtCore import QTimer
 from PySide6.QtWidgets import QApplication
+# from app.ui.windows.layout_window import LayoutWindow
 
 # from app.ui.windows.home_window import HomeWindow
 # from app.ui.windows.splash_screen import SplashScreen
@@ -14,6 +15,7 @@ def main():
     #splash.show()
 
     window = CardWindow()
+    # window = LayoutWindow()
 
     # def show_main_window():
         # splash.close()
