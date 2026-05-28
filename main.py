@@ -4,9 +4,9 @@ import sys
 from PySide6.QtWidgets import QApplication
 # from app.ui.windows.layout_window import LayoutWindow
 
-# from app.ui.windows.home_window import HomeWindow
+from app.ui.windows.home_window import HomeWindow
 # from app.ui.windows.splash_screen import SplashScreen
-from app.ui.windows.card_window import CardWindow
+# from app.ui.windows.card_window import CardWindow
 
 def main():
     app = QApplication(sys.argv)
@@ -14,7 +14,8 @@ def main():
     # splash = SplashScreen()
     #splash.show()
 
-    window = CardWindow()
+    # window = CardWindow()
+    window = HomeWindow()
     # window = LayoutWindow()
 
     # def show_main_window():

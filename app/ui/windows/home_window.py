@@ -1,42 +1,57 @@
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
-    QWidget,
     QLabel,
-    QVBoxLayout,
-    QHBoxLayout,
+    QMainWindow,
 )
 
 from app.ui.widgets.header_home_screen import Header
 from app.ui.widgets.action_card_home_screen import ActionCard
 from app.ui.widgets.section_frame_home_screen import SectionFrame
-from app.ui.styles.home_style import HOME_STYLE
+from app.utils.constants import CONFIG
+from app.ui.styles.helpers import set_variant
+from app.ui.widgets.klayout_box import LayoutWrapper
+from app.ui.widgets.top_bar_home_screen import TopBar
+from app.ui.styles.stylesheet import APP_STYLE
+from app.ui.styles.utilities import tw
 
-
-class HomeWindow(QWidget):
+class HomeWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("ImageBook")
-        self.resize(1080, 720)
+        self.setWindowTitle(CONFIG.WINDOW.TITLE_CAMELCASE)
+        self.resize(CONFIG.WINDOW.WIDTH, CONFIG.WINDOW.HEIGHT)
+        self.setWindowFlags(
+            Qt.WindowType.FramelessWindowHint 
+            | Qt.WindowType.Window
+        )
+        set_variant(self, "window")
+        self.setStyleSheet(APP_STYLE)
+        self._setup_ui()
 
-        self.setup_ui()
 
-    def setup_ui(self):
-        self.setStyleSheet(HOME_STYLE)
+    def _setup_ui(self)->None:
 
-        root = QVBoxLayout()
-        root.setContentsMargins(40, 30, 40, 30)
-        root.setSpacing(25)
+        root = LayoutWrapper(
+            direction="vertical",
+        )
+
+        top_bar = TopBar(self)
+        root.addWidget(top_bar)
+
+        container2 = LayoutWrapper(direction="vertical", margins=(30,0,30,30), spacing=20)
+        root.addWidget(container2)
 
         header = Header(
             title="ImageBook",
             subtitle="Create beautiful image books",
         )
-
-        root.addWidget(header)
-
-        actions_layout = QHBoxLayout()
-        actions_layout.setSpacing(20)
+        header.setStyleSheet(tw("title"))
+        container2.addWidget(header)
+    
+        actions_layout = LayoutWrapper(
+            direction="horizontal",
+            spacing=20
+        )
 
         new_card = ActionCard(
             title="Create New Project",
@@ -51,20 +66,20 @@ class HomeWindow(QWidget):
         actions_layout.addWidget(new_card)
         actions_layout.addWidget(open_card)
 
-        root.addLayout(actions_layout)
+        container2.addWidget(actions_layout)
 
         recent = SectionFrame("Recent Projects")
         recent.add_widget(QLabel("No recent projects"))
 
-        root.addWidget(recent)
+        container2.addWidget(recent)
 
-        root.addStretch()
+        container2.addStretch()
 
         footer = QLabel("ImageBook v1.0")
         footer.setAlignment(
             Qt.AlignmentFlag.AlignRight
         )
 
-        root.addWidget(footer)
+        container2.addWidget(footer)
 
-        self.setLayout(root)
+        self.setCentralWidget(root)

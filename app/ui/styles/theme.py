@@ -22,6 +22,22 @@ class Theme:
     ACCENT_HOVER: str = "#9A7BFF"
     ACCENT_ACTIVE: str = "#5A3DFF"
 
+        # =========================
+    # ICON SYSTEM
+    # =========================
+    ICON_PRIMARY: str = "#F5F7FA"
+    ICON_SECONDARY: str = "#B7BDC8"
+
+    ICON_HOVER: str = "#FFFFFF"
+    ICON_ACTIVE: str = "#D8CCFF"
+
+    ICON_DISABLED: str = "#5A6270"
+
+    # optional semantic colors
+    ICON_SUCCESS: str = "#31D0AA"
+    ICON_WARNING: str = "#FFB84D"
+    ICON_ERROR: str = "#FF6B6B"
+
     # =========================
     # CARDS (ELEVATION LAYERS)
     # =========================

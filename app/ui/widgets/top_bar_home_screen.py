@@ -1,8 +1,7 @@
 from PySide6.QtCore import Qt, QPoint
 from PySide6.QtGui import (
     QMouseEvent,
-    QGuiApplication,
-    QIcon
+    QGuiApplication
     )
 from PySide6.QtWidgets import (
     QFrame,
@@ -16,6 +15,8 @@ from app.ui.assets.icons import Icons
 from app.ui.widgets.window_control_button import WindowControlButton
 from app.ui.styles.helpers import set_variant
 from app.ui.styles.utilities import tw
+from app.ui.widgets.colored_icons import colored_icon
+from app.ui.styles.theme import theme
 
 
 class TopBar(QFrame):
@@ -92,11 +93,11 @@ class TopBar(QFrame):
         if self.parent_window.isMaximized():
             self.max_window_size = False
             self.parent_window.showNormal()
-            self.maximize_button.setIcon(QIcon(str(Icons.MAXIMIZE.path)))
+            self.maximize_button.setIcon(colored_icon(Icons.MAXIMIZE.path, theme.ICON_PRIMARY))
         else:
             self.max_window_size = True
             self.parent_window.showMaximized()
-            self.maximize_button.setIcon(QIcon(str(Icons.MAXIMIZE_MID.path)))
+            self.maximize_button.setIcon(colored_icon(Icons.MAXIMIZE_MID.path, theme.ICON_PRIMARY))
 
     # -------------------------
     # DRAG LOGIC (FIXED)
@@ -113,7 +114,7 @@ class TopBar(QFrame):
             return
 
         if event.buttons() & Qt.MouseButton.LeftButton:
-            self.maximize_button.setIcon(QIcon(str(Icons.MAXIMIZE.path)))
+            self.maximize_button.setIcon(colored_icon(Icons.MAXIMIZE.path, theme.ICON_PRIMARY))
             platform = QGuiApplication.platformName()
 
             # Wayland → use native drag

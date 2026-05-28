@@ -1,8 +1,10 @@
 from pathlib import Path
 
 from PySide6.QtCore import QEasingCurve, QSize, Qt, QPropertyAnimation, QEvent
-from PySide6.QtGui import QIcon, QEnterEvent
+from PySide6.QtGui import QEnterEvent
 from PySide6.QtWidgets import QPushButton, QWidget
+from app.ui.widgets.colored_icons import colored_icon
+from app.ui.styles.theme import theme
 
 
 class WindowControlButton(QPushButton):
@@ -12,7 +14,7 @@ class WindowControlButton(QPushButton):
         self.setFixedSize(40, 40)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
 
-        self.setIcon(QIcon(str(icon_path)))
+        self.setIcon(colored_icon(icon_path, theme.ICON_PRIMARY))
         self.setIconSize(QSize(18, 18))
 
         # animation setup

@@ -56,6 +56,14 @@
         "documentation": {}
     },
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "Any",
         "importPath": "typing",
         "description": "typing",
@@ -169,6 +177,14 @@
     },
     {
         "label": "Signal",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
         "isExtraImport": true,
@@ -728,14 +744,6 @@
         "documentation": {}
     },
     {
-        "label": "QWidget",
-        "importPath": "PySide6.QtWidgets",
-        "description": "PySide6.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PySide6.QtWidgets",
-        "documentation": {}
-    },
-    {
         "label": "QLabel",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -744,15 +752,7 @@
         "documentation": {}
     },
     {
-        "label": "QVBoxLayout",
-        "importPath": "PySide6.QtWidgets",
-        "description": "PySide6.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PySide6.QtWidgets",
-        "documentation": {}
-    },
-    {
-        "label": "QHBoxLayout",
+        "label": "QMainWindow",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -856,6 +856,30 @@
         "documentation": {}
     },
     {
+        "label": "theme",
+        "importPath": "app.ui.styles.theme",
+        "description": "app.ui.styles.theme",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.theme",
+        "documentation": {}
+    },
+    {
+        "label": "theme",
+        "importPath": "app.ui.styles.theme",
+        "description": "app.ui.styles.theme",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.theme",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
         "label": "dataclass",
         "importPath": "dataclasses",
         "description": "dataclasses",
@@ -920,6 +944,38 @@
         "documentation": {}
     },
     {
+        "label": "QColor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QIcon",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPainter",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
         "label": "QPixmap",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
@@ -976,22 +1032,6 @@
         "documentation": {}
     },
     {
-        "label": "QIcon",
-        "importPath": "PySide6.QtGui",
-        "description": "PySide6.QtGui",
-        "isExtraImport": true,
-        "detail": "PySide6.QtGui",
-        "documentation": {}
-    },
-    {
-        "label": "QIcon",
-        "importPath": "PySide6.QtGui",
-        "description": "PySide6.QtGui",
-        "isExtraImport": true,
-        "detail": "PySide6.QtGui",
-        "documentation": {}
-    },
-    {
         "label": "QEnterEvent",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
@@ -1040,6 +1080,22 @@
         "documentation": {}
     },
     {
+        "label": "set_variant",
+        "importPath": "app.ui.styles.helpers",
+        "description": "app.ui.styles.helpers",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "tw",
+        "importPath": "app.ui.styles.utilities",
+        "description": "app.ui.styles.utilities",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
         "label": "tw",
         "importPath": "app.ui.styles.utilities",
         "description": "app.ui.styles.utilities",
@@ -1080,11 +1136,43 @@
         "documentation": {}
     },
     {
+        "label": "colored_icon",
+        "importPath": "app.ui.widgets.colored_icons",
+        "description": "app.ui.widgets.colored_icons",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.colored_icons",
+        "documentation": {}
+    },
+    {
+        "label": "colored_icon",
+        "importPath": "app.ui.widgets.colored_icons",
+        "description": "app.ui.widgets.colored_icons",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.colored_icons",
+        "documentation": {}
+    },
+    {
         "label": "APP_STYLE",
         "importPath": "app.ui.styles.stylesheet",
         "description": "app.ui.styles.stylesheet",
         "isExtraImport": true,
         "detail": "app.ui.styles.stylesheet",
+        "documentation": {}
+    },
+    {
+        "label": "APP_STYLE",
+        "importPath": "app.ui.styles.stylesheet",
+        "description": "app.ui.styles.stylesheet",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.stylesheet",
+        "documentation": {}
+    },
+    {
+        "label": "TopBar",
+        "importPath": "app.ui.widgets.top_bar_home_screen",
+        "description": "app.ui.widgets.top_bar_home_screen",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.top_bar_home_screen",
         "documentation": {}
     },
     {
@@ -1136,11 +1224,19 @@
         "documentation": {}
     },
     {
-        "label": "HOME_STYLE",
-        "importPath": "app.ui.styles.home_style",
-        "description": "app.ui.styles.home_style",
+        "label": "CONFIG",
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
         "isExtraImport": true,
-        "detail": "app.ui.styles.home_style",
+        "detail": "app.utils.constants",
+        "documentation": {}
+    },
+    {
+        "label": "LayoutWrapper",
+        "importPath": "app.ui.widgets.klayout_box",
+        "description": "app.ui.widgets.klayout_box",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.klayout_box",
         "documentation": {}
     },
     {
@@ -1169,11 +1265,11 @@
         "documentation": {}
     },
     {
-        "label": "CardWindow",
-        "importPath": "app.ui.windows.card_window",
-        "description": "app.ui.windows.card_window",
+        "label": "HomeWindow",
+        "importPath": "app.ui.windows.home_window",
+        "description": "app.ui.windows.home_window",
         "isExtraImport": true,
-        "detail": "app.ui.windows.card_window",
+        "detail": "app.ui.windows.home_window",
         "documentation": {}
     },
     {
@@ -1330,6 +1426,15 @@
         "documentation": {}
     },
     {
+        "label": "colored_icon",
+        "kind": 2,
+        "importPath": "app.ui.widgets.colored_icons",
+        "description": "app.ui.widgets.colored_icons",
+        "peekOfCode": "def colored_icon(\n    path: Path,\n    color: str,\n) -> QIcon:\n    pixmap = QPixmap(str(path))\n    painter = QPainter(pixmap)\n    painter.setCompositionMode(\n        QPainter.CompositionMode.CompositionMode_SourceIn\n    )\n    painter.fillRect(",
+        "detail": "app.ui.widgets.colored_icons",
+        "documentation": {}
+    },
+    {
         "label": "Header",
         "kind": 6,
         "importPath": "app.ui.widgets.header_home_screen",
@@ -1406,7 +1511,7 @@
         "kind": 6,
         "importPath": "app.ui.widgets.window_control_button",
         "description": "app.ui.widgets.window_control_button",
-        "peekOfCode": "class WindowControlButton(QPushButton):\n    def __init__(self, icon_path: Path, parent: QWidget | None = None) -> None:\n        super().__init__(parent)\n        self.setFixedSize(40, 40)\n        self.setCursor(Qt.CursorShape.PointingHandCursor)\n        self.setIcon(QIcon(str(icon_path)))\n        self.setIconSize(QSize(18, 18))\n        # animation setup\n        self._anim = QPropertyAnimation(self, b\"iconSize\")\n        self._anim.setDuration(120)",
+        "peekOfCode": "class WindowControlButton(QPushButton):\n    def __init__(self, icon_path: Path, parent: QWidget | None = None) -> None:\n        super().__init__(parent)\n        self.setFixedSize(40, 40)\n        self.setCursor(Qt.CursorShape.PointingHandCursor)\n        self.setIcon(colored_icon(icon_path, theme.ICON_PRIMARY))\n        self.setIconSize(QSize(18, 18))\n        # animation setup\n        self._anim = QPropertyAnimation(self, b\"iconSize\")\n        self._anim.setDuration(120)",
         "detail": "app.ui.widgets.window_control_button",
         "documentation": {}
     },
@@ -1424,7 +1529,7 @@
         "kind": 6,
         "importPath": "app.ui.windows.home_window",
         "description": "app.ui.windows.home_window",
-        "peekOfCode": "class HomeWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"ImageBook\")\n        self.resize(1080, 720)\n        self.setup_ui()\n    def setup_ui(self):\n        self.setStyleSheet(HOME_STYLE)\n        root = QVBoxLayout()\n        root.setContentsMargins(40, 30, 40, 30)",
+        "peekOfCode": "class HomeWindow(QMainWindow):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(CONFIG.WINDOW.TITLE_CAMELCASE)\n        self.resize(CONFIG.WINDOW.WIDTH, CONFIG.WINDOW.HEIGHT)\n        self.setWindowFlags(\n            Qt.WindowType.FramelessWindowHint \n            | Qt.WindowType.Window\n        )\n        set_variant(self, \"window\")",
         "detail": "app.ui.windows.home_window",
         "documentation": {}
     },
@@ -1444,6 +1549,33 @@
         "description": "app.ui.windows.splash_screen",
         "peekOfCode": "class SplashScreen(QWidget):\n    WIDTH = 900\n    HEIGHT = 550\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"PicBook\")\n        self.setFixedSize(\n            self.WIDTH,\n            self.HEIGHT,\n        )",
         "detail": "app.ui.windows.splash_screen",
+        "documentation": {}
+    },
+    {
+        "label": "WindowConfig",
+        "kind": 6,
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "peekOfCode": "class WindowConfig:\n    WIDTH: int = 1080\n    HEIGHT: int = 720\n    TITLE_CAMELCASE: str = \"Image Book\"\n    TITLE_CAPS: str = \"IMAGE BOOK\"\n    TITLE_SMALL: str = \"image book\"\n@dataclass(frozen=True, slots=True)\nclass UIConfig:\n    WINDOW: WindowConfig = WindowConfig()\nCONFIG = UIConfig()",
+        "detail": "app.utils.constants",
+        "documentation": {}
+    },
+    {
+        "label": "UIConfig",
+        "kind": 6,
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "peekOfCode": "class UIConfig:\n    WINDOW: WindowConfig = WindowConfig()\nCONFIG = UIConfig()",
+        "detail": "app.utils.constants",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "kind": 5,
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "peekOfCode": "CONFIG = UIConfig()",
+        "detail": "app.utils.constants",
         "documentation": {}
     },
     {
@@ -1496,7 +1628,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def main():\n    app = QApplication(sys.argv)\n    # splash = SplashScreen()\n    #splash.show()\n    window = CardWindow()\n    # window = LayoutWindow()\n    # def show_main_window():\n        # splash.close()\n    window.show()\n    # QTimer.singleShot(",
+        "peekOfCode": "def main():\n    app = QApplication(sys.argv)\n    # splash = SplashScreen()\n    #splash.show()\n    # window = CardWindow()\n    window = HomeWindow()\n    # window = LayoutWindow()\n    # def show_main_window():\n        # splash.close()\n    window.show()",
         "detail": "main",
         "documentation": {}
     }
