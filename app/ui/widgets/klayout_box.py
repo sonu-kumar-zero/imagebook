@@ -48,6 +48,12 @@ class LayoutWrapper(QWidget):
     ) -> None:
         super().__init__(parent)
 
+        self.setAutoFillBackground(True)
+        self.setAttribute(
+            Qt.WidgetAttribute.WA_StyledBackground,
+            True,
+        )
+
         self.direction: LayoutDirection = (
             direction
         )
@@ -243,6 +249,12 @@ class GridLayoutWrapper(QWidget):
         alignment: Qt.AlignmentFlag | None = None,
     ) -> None:
         super().__init__(parent)
+
+        self.setAutoFillBackground(True)
+        self.setAttribute(
+            Qt.WidgetAttribute.WA_StyledBackground,
+            True,
+        )
 
         self._layout: QGridLayout = (
             QGridLayout()

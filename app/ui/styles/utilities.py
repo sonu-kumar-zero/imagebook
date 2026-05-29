@@ -35,6 +35,18 @@ UTILITIES: Final[dict[UtilityClass, str]] = {
         background-color: {theme.CARD_BG_HOVER};
     """,
 
+    "bg-red": f"""
+        background-color: "#ff0000";
+    """,
+
+    "bg-blue": f"""
+        background-color: "#0000ff";
+    """,
+
+    "bg-green": f"""
+        background-color: "#00ff00";
+    """,
+
     # =========================
     # BORDERS
     # =========================

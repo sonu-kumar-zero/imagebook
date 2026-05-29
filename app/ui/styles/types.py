@@ -26,6 +26,9 @@ UtilityClass = Literal[
     "bg-surface-3",
     "bg-card",
     "bg-card-hover",
+    "bg-red",
+    "bg-blue",
+    "bg-green",
 
     # =========================
     # BORDERS
