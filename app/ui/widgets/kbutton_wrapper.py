@@ -3,7 +3,7 @@ from __future__ import annotations
 from collections.abc import Callable
 
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QPixmap, QResizeEvent
+from PySide6.QtGui import QResizeEvent
 from PySide6.QtWidgets import (
     QLabel,
     QPushButton,
@@ -16,6 +16,7 @@ from app.ui.widgets.klayout_box import (
 )
 from app.ui.widgets.kframe import FrameWrapper
 from pathlib import Path
+from app.ui.widgets.load_svg_pixmap import load_svg_pixmap
 
 class ButtonWrapper(QWidget):
 
@@ -97,8 +98,8 @@ class ButtonWrapper(QWidget):
             if icon_path:
                 icon_label = QLabel()
 
-                pixmap = QPixmap(
-                    icon_path
+                pixmap = load_svg_pixmap(
+                    path=icon_path
                 )
 
                 icon_label.setPixmap(

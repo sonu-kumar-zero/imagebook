@@ -80,6 +80,14 @@
         "documentation": {}
     },
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "Any",
         "importPath": "typing",
         "description": "typing",
@@ -248,14 +256,6 @@
         "documentation": {}
     },
     {
-        "label": "Qt",
-        "importPath": "PySide6.QtCore",
-        "description": "PySide6.QtCore",
-        "isExtraImport": true,
-        "detail": "PySide6.QtCore",
-        "documentation": {}
-    },
-    {
         "label": "QEvent",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
@@ -329,6 +329,22 @@
     },
     {
         "label": "QObject",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QByteArray",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
         "isExtraImport": true,
@@ -1160,23 +1176,7 @@
         "documentation": {}
     },
     {
-        "label": "QPixmap",
-        "importPath": "PySide6.QtGui",
-        "description": "PySide6.QtGui",
-        "isExtraImport": true,
-        "detail": "PySide6.QtGui",
-        "documentation": {}
-    },
-    {
         "label": "QEnterEvent",
-        "importPath": "PySide6.QtGui",
-        "description": "PySide6.QtGui",
-        "isExtraImport": true,
-        "detail": "PySide6.QtGui",
-        "documentation": {}
-    },
-    {
-        "label": "QPixmap",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
         "isExtraImport": true,
@@ -1193,6 +1193,22 @@
     },
     {
         "label": "QWheelEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPainter",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
         "isExtraImport": true,
@@ -1253,6 +1269,22 @@
         "description": "PySide6.QtGui",
         "isExtraImport": true,
         "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "load_svg_pixmap",
+        "importPath": "app.ui.widgets.load_svg_pixmap",
+        "description": "app.ui.widgets.load_svg_pixmap",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.load_svg_pixmap",
+        "documentation": {}
+    },
+    {
+        "label": "load_svg_pixmap",
+        "importPath": "app.ui.widgets.load_svg_pixmap",
+        "description": "app.ui.widgets.load_svg_pixmap",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.load_svg_pixmap",
         "documentation": {}
     },
     {
@@ -1376,11 +1408,35 @@
         "documentation": {}
     },
     {
+        "label": "QSvgRenderer",
+        "importPath": "PySide6.QtSvg",
+        "description": "PySide6.QtSvg",
+        "isExtraImport": true,
+        "detail": "PySide6.QtSvg",
+        "documentation": {}
+    },
+    {
+        "label": "dprint",
+        "importPath": "app.core.logger",
+        "description": "app.core.logger",
+        "isExtraImport": true,
+        "detail": "app.core.logger",
+        "documentation": {}
+    },
+    {
         "label": "ButtonWrapper",
         "importPath": "app.ui.widgets.kbutton_wrapper",
         "description": "app.ui.widgets.kbutton_wrapper",
         "isExtraImport": true,
         "detail": "app.ui.widgets.kbutton_wrapper",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "isExtraImport": true,
+        "detail": "app.utils.constants",
         "documentation": {}
     },
     {
@@ -1701,7 +1757,7 @@
         "kind": 2,
         "importPath": "app.ui.widgets.colored_icons",
         "description": "app.ui.widgets.colored_icons",
-        "peekOfCode": "def colored_icon(\n    path: Path,\n    color: str,\n) -> QIcon:\n    pixmap = QPixmap(str(path))\n    painter = QPainter(pixmap)\n    painter.setCompositionMode(\n        QPainter.CompositionMode.CompositionMode_SourceIn\n    )\n    painter.fillRect(",
+        "peekOfCode": "def colored_icon(\n    path: Path,\n    color: str = theme.ACCENT,\n) -> QIcon:\n    pixmap = load_svg_pixmap(path, color)\n    painter = QPainter(pixmap)\n    painter.setCompositionMode(\n        QPainter.CompositionMode.CompositionMode_SourceIn\n    )\n    painter.fillRect(",
         "detail": "app.ui.widgets.colored_icons",
         "documentation": {}
     },
@@ -1769,6 +1825,15 @@
         "documentation": {}
     },
     {
+        "label": "load_svg_pixmap",
+        "kind": 2,
+        "importPath": "app.ui.widgets.load_svg_pixmap",
+        "description": "app.ui.widgets.load_svg_pixmap",
+        "peekOfCode": "def load_svg_pixmap(\n    path: Path,\n    color: str = theme.ACCENT,\n    size: int = 24,\n) -> QPixmap:\n    svg_text = path.read_text(encoding=\"utf-8\")\n    dprint(__file__, f\"SVG text: {svg_text[:200]}...\")  # Debug: print the first 100 characters of the SVG\n    # Replace stroke color\n    svg_text = svg_text.replace(\n        'stroke=\"currentColor\"',",
+        "detail": "app.ui.widgets.load_svg_pixmap",
+        "documentation": {}
+    },
+    {
         "label": "Color",
         "kind": 6,
         "importPath": "app.ui.widgets.qcolor",
@@ -1818,7 +1883,7 @@
         "kind": 6,
         "importPath": "app.ui.widgets.window_control_button",
         "description": "app.ui.widgets.window_control_button",
-        "peekOfCode": "class WindowControlButton(QPushButton):\n    def __init__(self, icon_path: Path, parent: QWidget | None = None) -> None:\n        super().__init__(parent)\n        self.setFixedSize(40, 40)\n        self.setCursor(Qt.CursorShape.PointingHandCursor)\n        self.setIcon(colored_icon(icon_path, theme.ICON_PRIMARY))\n        self.setIconSize(QSize(18, 18))\n        # animation setup\n        self._anim = QPropertyAnimation(self, b\"iconSize\")\n        self._anim.setDuration(120)",
+        "peekOfCode": "class WindowControlButton(QPushButton):\n    def __init__(self, icon_path: Path, parent: QWidget | None = None) -> None:\n        super().__init__(parent)\n        self.setFixedSize(40, 40)\n        self.setCursor(Qt.CursorShape.PointingHandCursor)\n        self.setIcon(colored_icon(icon_path))\n        self.setIconSize(QSize(18, 18))\n        # animation setup\n        self._anim = QPropertyAnimation(self, b\"iconSize\")\n        self._anim.setDuration(120)",
         "detail": "app.ui.widgets.window_control_button",
         "documentation": {}
     },
@@ -1908,7 +1973,7 @@
         "kind": 6,
         "importPath": "dist.ImageBook._internal.app.ui.assets.icons",
         "description": "dist.ImageBook._internal.app.ui.assets.icons",
-        "peekOfCode": "class Icons(StrEnum):\n    CROSS = \"cross.svg\"\n    MINIMIZE = \"minimize.svg\"\n    MAXIMIZE = \"maximize.svg\"\n    MENU = \"menu.svg\"\n    MAXIMIZE_MID = \"maximize_mid.svg\"\n    @property\n    def path(self) -> Path:\n        return ICON_DIR / self.value",
+        "peekOfCode": "class Icons(StrEnum):\n    CROSS = \"cross.svg\"\n    MINIMIZE = \"minimize.svg\"\n    MAXIMIZE = \"maximize.svg\"\n    MENU = \"menu.svg\"\n    MAXIMIZE_MID = \"maximize_mid.svg\"\n    EXPLORE = \"explore.svg\"\n    GALLERY = \"gallery.svg\"\n    COLLECTIONS = \"collections.svg\"\n    FAVORITES = \"favorites.svg\"",
         "detail": "dist.ImageBook._internal.app.ui.assets.icons",
         "documentation": {}
     },
@@ -1917,7 +1982,7 @@
         "kind": 5,
         "importPath": "dist.ImageBook._internal.app.ui.assets.icons",
         "description": "dist.ImageBook._internal.app.ui.assets.icons",
-        "peekOfCode": "ICON_DIR = (\n    Path(__file__).parent / \"icons\"\n)\nclass Icons(StrEnum):\n    CROSS = \"cross.svg\"\n    MINIMIZE = \"minimize.svg\"\n    MAXIMIZE = \"maximize.svg\"\n    MENU = \"menu.svg\"\n    MAXIMIZE_MID = \"maximize_mid.svg\"\n    @property",
+        "peekOfCode": "ICON_DIR = (\n    Path(__file__).parent / \"icons\"\n)\nclass Icons(StrEnum):\n    CROSS = \"cross.svg\"\n    MINIMIZE = \"minimize.svg\"\n    MAXIMIZE = \"maximize.svg\"\n    MENU = \"menu.svg\"\n    MAXIMIZE_MID = \"maximize_mid.svg\"\n    EXPLORE = \"explore.svg\"",
         "detail": "dist.ImageBook._internal.app.ui.assets.icons",
         "documentation": {}
     },

@@ -37,15 +37,6 @@ class SideBar(FrameWrapper):
     def _setup_ui(self) -> None:
         layout = self.layout_ref
 
-        # title = QLabel("ImageBook")
-        # title.setObjectName("sidebar_title")
-
-        # subtitle = QLabel("Your creative workspace")
-        # subtitle.setObjectName("sidebar_subtitle")
-
-        # layout.addWidget(title)
-        # layout.addWidget(subtitle)
-
         self._separator()
 
         navigation_items: list[NavigationItem] = [

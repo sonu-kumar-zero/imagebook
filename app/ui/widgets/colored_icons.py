@@ -1,19 +1,19 @@
 from pathlib import Path
 
-from PySide6.QtCore import Qt
 from PySide6.QtGui import (
     QColor,
     QIcon,
     QPainter,
-    QPixmap,
 )
+from app.ui.widgets.load_svg_pixmap import load_svg_pixmap
+from app.ui.styles.theme import theme
 
 
 def colored_icon(
     path: Path,
-    color: str,
+    color: str = theme.ACCENT,
 ) -> QIcon:
-    pixmap = QPixmap(str(path))
+    pixmap = load_svg_pixmap(path, color)
 
     painter = QPainter(pixmap)
     painter.setCompositionMode(

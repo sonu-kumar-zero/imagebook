@@ -16,7 +16,7 @@ from app.ui.widgets.window_control_button import WindowControlButton
 from app.ui.styles.helpers import set_variant
 from app.ui.styles.utilities import tw
 from app.ui.widgets.colored_icons import colored_icon
-from app.ui.styles.theme import theme
+from app.utils.constants import CONFIG
 
 
 class TopBar(QFrame):
@@ -53,9 +53,9 @@ class TopBar(QFrame):
         layout.setSpacing(12)
 
         # Left side
-        menu_button = WindowControlButton(Icons.MENU.path)
+        # menu_button = WindowControlButton(Icons.MENU.path)
 
-        title_label = QLabel("ImageBook")
+        title_label = QLabel(CONFIG.WINDOW.TITLE_CAMELCASE)
         set_variant(title_label, "title")
         title_label.setStyleSheet(tw("text-accent"))
 
@@ -78,7 +78,7 @@ class TopBar(QFrame):
 
         self.maximize_button.clicked.connect(self.toggle_maximize)
 
-        layout.addWidget(menu_button)
+        # layout.addWidget(menu_button)
         layout.addWidget(title_label)
         layout.addWidget(spacer)
 
@@ -93,11 +93,11 @@ class TopBar(QFrame):
         if self.parent_window.isMaximized():
             self.max_window_size = False
             self.parent_window.showNormal()
-            self.maximize_button.setIcon(colored_icon(Icons.MAXIMIZE.path, theme.ICON_PRIMARY))
+            self.maximize_button.setIcon(colored_icon(Icons.MAXIMIZE.path))
         else:
             self.max_window_size = True
             self.parent_window.showMaximized()
-            self.maximize_button.setIcon(colored_icon(Icons.MAXIMIZE_MID.path, theme.ICON_PRIMARY))
+            self.maximize_button.setIcon(colored_icon(Icons.MAXIMIZE_MID.path))
 
     # -------------------------
     # DRAG LOGIC (FIXED)
@@ -114,7 +114,7 @@ class TopBar(QFrame):
             return
 
         if event.buttons() & Qt.MouseButton.LeftButton:
-            self.maximize_button.setIcon(colored_icon(Icons.MAXIMIZE.path, theme.ICON_PRIMARY))
+            self.maximize_button.setIcon(colored_icon(Icons.MAXIMIZE.path))
             platform = QGuiApplication.platformName()
 
             # Wayland → use native drag

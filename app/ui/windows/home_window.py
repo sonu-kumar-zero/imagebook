@@ -80,7 +80,7 @@ class HomeWindow(QMainWindow):
 
         body_layout = LayoutWrapper(
             direction="horizontal",
-            margins=(30, 0, 30, 0),
+            margins=(0, 0, 0, 0),
             spacing=20,
         )
 
