@@ -544,6 +544,14 @@
         "documentation": {}
     },
     {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
         "label": "QPoint",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
@@ -1632,6 +1640,22 @@
         "documentation": {}
     },
     {
+        "label": "ButtonWrapper2",
+        "importPath": "app.ui.widgets.button_wrapper2",
+        "description": "app.ui.widgets.button_wrapper2",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.button_wrapper2",
+        "documentation": {}
+    },
+    {
+        "label": "FrameWrapper2",
+        "importPath": "app.ui.widgets.frame_wrapper2",
+        "description": "app.ui.widgets.frame_wrapper2",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.frame_wrapper2",
+        "documentation": {}
+    },
+    {
         "label": "FrameWrapper2",
         "importPath": "app.ui.widgets.frame_wrapper2",
         "description": "app.ui.widgets.frame_wrapper2",
@@ -1672,11 +1696,11 @@
         "documentation": {}
     },
     {
-        "label": "FrameWrapper",
-        "importPath": "app.ui.widgets.kframe",
-        "description": "app.ui.widgets.kframe",
+        "label": "BaseLayout",
+        "importPath": "app.ui.widgets.base_layout",
+        "description": "app.ui.widgets.base_layout",
         "isExtraImport": true,
-        "detail": "app.ui.widgets.kframe",
+        "detail": "app.ui.widgets.base_layout",
         "documentation": {}
     },
     {
@@ -1709,14 +1733,6 @@
         "description": "app.ui.widgets.kframe",
         "isExtraImport": true,
         "detail": "app.ui.widgets.kframe",
-        "documentation": {}
-    },
-    {
-        "label": "LayoutWrapper",
-        "importPath": "app.ui.widgets.klayout_box",
-        "description": "app.ui.widgets.klayout_box",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.klayout_box",
         "documentation": {}
     },
     {
@@ -2037,14 +2053,6 @@
         "description": "PySide6.QtSvg",
         "isExtraImport": true,
         "detail": "PySide6.QtSvg",
-        "documentation": {}
-    },
-    {
-        "label": "ButtonWrapper",
-        "importPath": "app.ui.widgets.kbutton_wrapper",
-        "description": "app.ui.widgets.kbutton_wrapper",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.kbutton_wrapper",
         "documentation": {}
     },
     {
@@ -2593,7 +2601,7 @@
         "kind": 6,
         "importPath": "app.ui.widgets.side_bar",
         "description": "app.ui.widgets.side_bar",
-        "peekOfCode": "class NavigationItem:\n    key: str\n    text: str\n    iconPath: Path | None = None\nclass SideBar(FrameWrapper):\n    def __init__(self, parent: QWidget | None = None) -> None:\n        super().__init__(\n            parent=parent,\n            object_name=\"sidebar\",\n            fixed_width=CONFIG.SIDEBAR.WIDTH,",
+        "peekOfCode": "class NavigationItem:\n    key: str\n    text: str\n    iconPath: Path | None = None\nclass SideBar(FrameWrapper2):\n    def __init__(self, parent: QWidget | None = None) -> None:\n        super().__init__(\n            parent=parent,\n            object_name=\"sidebar\",\n            fixed_width=CONFIG.SIDEBAR.WIDTH,",
         "detail": "app.ui.widgets.side_bar",
         "documentation": {}
     },
@@ -2602,7 +2610,7 @@
         "kind": 6,
         "importPath": "app.ui.widgets.side_bar",
         "description": "app.ui.widgets.side_bar",
-        "peekOfCode": "class SideBar(FrameWrapper):\n    def __init__(self, parent: QWidget | None = None) -> None:\n        super().__init__(\n            parent=parent,\n            object_name=\"sidebar\",\n            fixed_width=CONFIG.SIDEBAR.WIDTH,\n            expand_width=False,\n            layout=LayoutWrapper(\n                direction=\"vertical\",\n                margins=(30, 20, 0, 20),",
+        "peekOfCode": "class SideBar(FrameWrapper2):\n    def __init__(self, parent: QWidget | None = None) -> None:\n        super().__init__(\n            parent=parent,\n            object_name=\"sidebar\",\n            fixed_width=CONFIG.SIDEBAR.WIDTH,\n            expand_width=False,\n            layout=BaseLayout(\n                direction=\"vertical\",\n                margins=(30, 20, 0, 20),",
         "detail": "app.ui.widgets.side_bar",
         "documentation": {}
     },

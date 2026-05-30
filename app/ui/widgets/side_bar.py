@@ -1,13 +1,14 @@
 from PySide6.QtWidgets import  QSizePolicy, QWidget
+from PySide6.QtCore import  Qt
 
-from app.ui.widgets.kbutton_wrapper import ButtonWrapper
-from app.ui.widgets.kframe import FrameWrapper
-from app.ui.widgets.klayout_box import LayoutWrapper
 from app.utils.constants import CONFIG
 
 from dataclasses import dataclass
 from pathlib import Path
 from app.ui.assets.icons import Icons
+from app.ui.widgets.button_wrapper2 import ButtonWrapper2
+from app.ui.widgets.frame_wrapper2 import FrameWrapper2
+from app.ui.widgets.base_layout import BaseLayout
 
 @dataclass
 class NavigationItem:
@@ -15,19 +16,19 @@ class NavigationItem:
     text: str
     iconPath: Path | None = None
 
-class SideBar(FrameWrapper):
+class SideBar(FrameWrapper2):
     def __init__(self, parent: QWidget | None = None) -> None:
         super().__init__(
             parent=parent,
             object_name="sidebar",
             fixed_width=CONFIG.SIDEBAR.WIDTH,
             expand_width=False,
-            layout=LayoutWrapper(
+            layout=BaseLayout(
                 direction="vertical",
                 margins=(30, 20, 0, 20),
                 spacing=15))
 
-        self.buttons: dict[str, ButtonWrapper] = {}
+        self.buttons: dict[str, ButtonWrapper2] = {}
 
         self.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Expanding)
 
@@ -63,7 +64,7 @@ class SideBar(FrameWrapper):
         layout = self.layout_ref
 
         for item in items:
-            button = ButtonWrapper(
+            button = ButtonWrapper2(
                 text=item.text,
                 height=54,
                 radius=18,
@@ -76,16 +77,7 @@ class SideBar(FrameWrapper):
                 ),
                 icon_path=item.iconPath,
                 spacing=18,
-                frame=FrameWrapper(
-                    object_name=(
-                        "sidebar_button_frame"
-                    ),
-                    layout=LayoutWrapper(
-                        direction="horizontal",
-                        margins=(24, 0, 24, 0),
-                        spacing=18,
-                    ),
-                ),
+                alignment=Qt.AlignmentFlag.AlignLeft,
             )
             
             self.buttons[item.key] = button
@@ -99,4 +91,4 @@ class SideBar(FrameWrapper):
             layout.addWidget(button)
 
     def _separator(self) -> None:
-        self.layout_ref.addWidget(FrameWrapper(object_name="sidebar_separator", shape="hline"))
+        self.layout_ref.addWidget(FrameWrapper2(object_name="sidebar_separator", shape="hline"))

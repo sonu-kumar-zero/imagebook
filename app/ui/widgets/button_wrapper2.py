@@ -39,6 +39,7 @@ class ButtonWrapper2(QWidget):
         border_color: str = "transparent",
         border_width: int = 0,
         icon_position: IconPosition = "left",
+        alignment: Qt.AlignmentFlag = Qt.AlignmentFlag.AlignCenter,
         callback: Callable[[], None] | None = None,
     ) -> None:
         super().__init__(parent)
@@ -55,6 +56,7 @@ class ButtonWrapper2(QWidget):
         self._border = border_color
         self._border_width = border_width
         self._icon_position = icon_position
+        self._alignment = alignment
 
         self.setObjectName(object_name)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
@@ -80,7 +82,7 @@ class ButtonWrapper2(QWidget):
             self.icon_label.setPixmap(load_svg_pixmap(
                 path=icon_path,
                 color=text_color,
-                size=icon_size,
+                size=icon_size + 8,
             ))
         else:
             self.icon_label.hide()
@@ -91,11 +93,9 @@ class ButtonWrapper2(QWidget):
         self._layout = QHBoxLayout(self)
         self._layout.setContentsMargins(padding_x, 0, padding_x, 0)
         self._layout.setSpacing(spacing)
-        self._layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self._layout.setAlignment(alignment)
 
-        self._layout.addStretch()
         self._apply_layout(icon_position)
-        self._layout.addStretch()
 
         # -------------------------
         # Size
@@ -118,19 +118,19 @@ class ButtonWrapper2(QWidget):
 
         if position == "only":
             self.text_label.hide()
-            self._layout.addWidget(self.icon_label, alignment=Qt.AlignmentFlag.AlignCenter)
+            self._layout.addWidget(self.icon_label, alignment=self._alignment)
             return
 
         self.text_label.show()
         self.icon_label.show()
 
         if position == "left":
-            self._layout.addWidget(self.icon_label, alignment=Qt.AlignmentFlag.AlignCenter)
-            self._layout.addWidget(self.text_label, alignment=Qt.AlignmentFlag.AlignCenter)
+            self._layout.addWidget(self.icon_label, alignment=self._alignment)
+            self._layout.addWidget(self.text_label, alignment=self._alignment)
 
         elif position == "right":
-            self._layout.addWidget(self.text_label, alignment=Qt.AlignmentFlag.AlignCenter)
-            self._layout.addWidget(self.icon_label, alignment=Qt.AlignmentFlag.AlignCenter)
+            self._layout.addWidget(self.text_label, alignment=self._alignment)
+            self._layout.addWidget(self.icon_label, alignment=self._alignment)
 
     # ==========================================================
     # Styling engine (STATE BASED)
