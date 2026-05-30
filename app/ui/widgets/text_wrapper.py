@@ -10,14 +10,10 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app.ui.widgets.kframe import (
-    FrameWrapper,
-)
-from app.ui.widgets.klayout_box import (
-    LayoutWrapper,
-)
 from app.ui.styles.types import Variant
 from app.ui.styles.helpers import set_variant
+from app.ui.widgets.frame_wrapper2 import FrameWrapper2
+from app.ui.widgets.base_layout import BaseLayout
 
 # ==========================================================
 # TYPES
@@ -32,12 +28,33 @@ FontWeight: TypeAlias = Literal[
     "black",
 ]
 
+FONT_WEIGHT_MAP = {
+    "thin": (
+        QFont.Weight.Thin
+    ),
+    "light": (
+        QFont.Weight.Light
+    ),
+    "normal": (
+        QFont.Weight.Normal
+    ),
+    "medium": (
+        QFont.Weight.Medium
+    ),
+    "bold": (
+        QFont.Weight.Bold
+    ),
+    "black": (
+        QFont.Weight.Black
+    ),
+}
+
 
 # ==========================================================
 # TEXT WRAPPER
 # ==========================================================
 
-class TextWrapper(FrameWrapper):
+class TextWrapper(FrameWrapper2):
     def __init__(
         self,
         *,
@@ -63,7 +80,7 @@ class TextWrapper(FrameWrapper):
             object_name=object_name,
             bg_color=bg_color,
             border_radius=border_radius,
-            layout=LayoutWrapper(
+            layout=BaseLayout(
                 margins=padding,
             ),
             color=color,

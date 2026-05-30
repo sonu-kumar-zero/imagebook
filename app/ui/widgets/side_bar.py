@@ -1,5 +1,4 @@
-from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QPushButton, QSizePolicy, QWidget
+from PySide6.QtWidgets import  QSizePolicy, QWidget
 
 from app.ui.widgets.kbutton_wrapper import ButtonWrapper
 from app.ui.widgets.kframe import FrameWrapper
@@ -88,6 +87,7 @@ class SideBar(FrameWrapper):
                     ),
                 ),
             )
+            
             self.buttons[item.key] = button
 
             setattr(
@@ -97,16 +97,6 @@ class SideBar(FrameWrapper):
             )
 
             layout.addWidget(button)
-
-    def _create_button(self, text: str) -> QPushButton:
-        button = QPushButton(text)
-
-        button.setObjectName("sidebar_button")
-        button.setCursor(Qt.CursorShape.PointingHandCursor)
-        button.setMinimumHeight(48)
-        button.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
-
-        return button
 
     def _separator(self) -> None:
         self.layout_ref.addWidget(FrameWrapper(object_name="sidebar_separator", shape="hline"))
