@@ -1928,6 +1928,14 @@
         "documentation": {}
     },
     {
+        "label": "QResizeEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
         "label": "QFont",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
@@ -2691,7 +2699,7 @@
         "kind": 6,
         "importPath": "app.utils.constants",
         "description": "app.utils.constants",
-        "peekOfCode": "class WindowConfig:\n    WIDTH: int = 1080\n    HEIGHT: int = 720\n    TITLE_CAMELCASE: str = \"Image Book\"\n    TITLE_CAPS: str = \"IMAGE BOOK\"\n    TITLE_SMALL: str = \"image book\"\n@dataclass(frozen=True, slots=True)\nclass SideBarConfig:\n    WIDTH:int = 260\n@dataclass(frozen=True, slots=True)",
+        "peekOfCode": "class WindowConfig:\n    WIDTH: int = 1080\n    HEIGHT: int = 720\n    TITLE_CAMELCASE: str = \"Image Book\"\n    TITLE_CAPS: str = \"IMAGE BOOK\"\n    TITLE_SMALL: str = \"image book\"\n@dataclass(frozen=True, slots=True)\nclass SideBarConfig:\n    WIDTH:int = 260\n    COLLAPSE_THRESHOLD: int = 1220",
         "detail": "app.utils.constants",
         "documentation": {}
     },
@@ -2700,7 +2708,7 @@
         "kind": 6,
         "importPath": "app.utils.constants",
         "description": "app.utils.constants",
-        "peekOfCode": "class SideBarConfig:\n    WIDTH:int = 260\n@dataclass(frozen=True, slots=True)\nclass UIConfig:\n    WINDOW: WindowConfig = WindowConfig()\n    SIDEBAR: SideBarConfig = SideBarConfig()\nCONFIG = UIConfig()",
+        "peekOfCode": "class SideBarConfig:\n    WIDTH:int = 260\n    COLLAPSE_THRESHOLD: int = 1220\n    COLLAPSE_WIDTH: int = 100\n@dataclass(frozen=True, slots=True)\nclass UIConfig:\n    WINDOW: WindowConfig = WindowConfig()\n    SIDEBAR: SideBarConfig = SideBarConfig()\nCONFIG = UIConfig()",
         "detail": "app.utils.constants",
         "documentation": {}
     },

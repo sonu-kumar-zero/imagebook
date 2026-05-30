@@ -1,5 +1,7 @@
 from PySide6.QtWidgets import  QSizePolicy, QWidget
 from PySide6.QtCore import  Qt
+from PySide6.QtGui import  QResizeEvent
+
 
 from app.utils.constants import CONFIG
 
@@ -29,6 +31,7 @@ class SideBar(FrameWrapper2):
                 spacing=15))
 
         self.buttons: dict[str, ButtonWrapper2] = {}
+        self._collapsed_auto: bool = False
 
         self.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Expanding)
 
@@ -92,3 +95,34 @@ class SideBar(FrameWrapper2):
 
     def _separator(self) -> None:
         self.layout_ref.addWidget(FrameWrapper2(object_name="sidebar_separator", shape="hline"))
+        
+    def set_collapsed(self, collapsed: bool) -> None:
+        if collapsed:
+            self.setFixedWidth(CONFIG.SIDEBAR.COLLAPSE_WIDTH)
+        else:
+            self.setFixedWidth(CONFIG.SIDEBAR.WIDTH)
+        for button in self.buttons.values():
+            if collapsed:
+                button.setAlignment(Qt.AlignmentFlag.AlignCenter)
+            else:
+                button.setAlignment(Qt.AlignmentFlag.AlignLeft)
+            button.set_collapsed(collapsed)
+    
+    def resizeEvent(self, event:QResizeEvent) -> None:
+        super().resizeEvent(event)
+
+        parent = self.parentWidget()
+        if not parent:
+            return
+
+        self._update_collapse_state(parent.width())
+        
+    def _update_collapse_state(self, width: int) -> None:
+        should_collapse = width < CONFIG.SIDEBAR.COLLAPSE_THRESHOLD
+
+        # avoid repeated re-apply (important for performance + flicker)
+        if should_collapse == self._collapsed_auto:
+            return
+
+        self._collapsed_auto = should_collapse
+        self.set_collapsed(should_collapse)

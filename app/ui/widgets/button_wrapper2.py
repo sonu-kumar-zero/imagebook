@@ -57,6 +57,7 @@ class ButtonWrapper2(QWidget):
         self._border_width = border_width
         self._icon_position = icon_position
         self._alignment = alignment
+        self._original_text = text
 
         self.setObjectName(object_name)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
@@ -193,3 +194,19 @@ class ButtonWrapper2(QWidget):
 
     def removeIcon(self):
         self.icon_label.hide()
+        
+    def set_collapsed(self, collapsed: bool) -> None:
+        if collapsed:
+            self.text_label.setText("")
+            self.text_label.setVisible(False)  # optional but better UX
+        else:
+            self.text_label.setVisible(True)
+            self.text_label.setText(self._original_text)        
+
+
+    def setAlignment(self, alignment: Qt.AlignmentFlag) -> None:
+        """
+        Update content alignment inside the button layout.
+        """
+        self._alignment = alignment
+        self._layout.setAlignment(alignment)

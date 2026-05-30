@@ -12,6 +12,8 @@ class WindowConfig:
 @dataclass(frozen=True, slots=True)
 class SideBarConfig:
     WIDTH:int = 260
+    COLLAPSE_THRESHOLD: int = 1220
+    COLLAPSE_WIDTH: int = 100
 
 
 @dataclass(frozen=True, slots=True)
