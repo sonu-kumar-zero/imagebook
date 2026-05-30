@@ -1,6 +1,11 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Literal, TypeAlias, cast
+from typing import (
+    TYPE_CHECKING,
+    Literal,
+    TypeAlias,
+    cast,
+)
 
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
@@ -54,11 +59,24 @@ class FrameWrapper(QFrame):
         fixed_height: int | None = None,
         expand_width: bool = True,
         expand_height: bool = True,
+
+        # ==========================
+        # STYLING
+        # ==========================
+
+        bg_color: str = "transparent",
+        color: str | None = None,
+        border_radius: int = 0,
+        border_width: int = 0,
+        border_color: str = (
+            "transparent"
+        ),
     ) -> None:
         super().__init__(parent)
 
         self.setAttribute(
-            Qt.WidgetAttribute.WA_StyledBackground,
+            Qt.WidgetAttribute.
+            WA_StyledBackground,
             True,
         )
 
@@ -90,6 +108,20 @@ class FrameWrapper(QFrame):
             expand_height=expand_height,
         )
 
+        self._apply_styles(
+            bg_color=bg_color,
+            color=color,
+            border_radius=(
+                border_radius
+            ),
+            border_width=(
+                border_width
+            ),
+            border_color=(
+                border_color
+            ),
+        )
+
         # ==========================
         # CONVENIENCE LAYOUT
         # ==========================
@@ -103,17 +135,55 @@ class FrameWrapper(QFrame):
     # INTERNALS
     # ======================================================
 
+    def _apply_styles(
+        self,
+        *,
+        bg_color: str,
+        color: str | None,
+        border_radius: int,
+        border_width: int,
+        border_color: str,
+    ) -> None:
+        stylesheet = f"""
+        QFrame {{
+            background-color:
+                {bg_color};
+
+            border-radius:
+                {border_radius}px;
+
+            border:
+                {border_width}px solid
+                {border_color};
+        }}
+        """
+
+        if color is not None:
+            stylesheet += f"""
+            QLabel {{
+                color:
+                    {color};
+            }}
+            """
+
+        self.setStyleSheet(
+            stylesheet
+        )
+
     def _get_shape(
         self,
         shape: FrameShape,
     ) -> QFrame.Shape:
         mapping = {
-            "box": QFrame.Shape.Box,
+            "box": (
+                QFrame.Shape.Box
+            ),
             "panel": (
                 QFrame.Shape.Panel
             ),
             "styled": (
-                QFrame.Shape.StyledPanel
+                QFrame.Shape.
+                StyledPanel
             ),
             "hline": (
                 QFrame.Shape.HLine
@@ -186,15 +256,19 @@ class FrameWrapper(QFrame):
             )
 
         horizontal = (
-            QSizePolicy.Policy.Expanding
+            QSizePolicy.Policy.
+            Expanding
             if expand_width
-            else QSizePolicy.Policy.Preferred
+            else QSizePolicy.Policy.
+            Preferred
         )
 
         vertical = (
-            QSizePolicy.Policy.Expanding
+            QSizePolicy.Policy.
+            Expanding
             if expand_height
-            else QSizePolicy.Policy.Preferred
+            else QSizePolicy.Policy.
+            Preferred
         )
 
         self.setSizePolicy(
@@ -215,7 +289,9 @@ class FrameWrapper(QFrame):
         )
 
     @property
-    def layout_ref(self) -> "LayoutWrapper":
+    def layout_ref(
+        self,
+    ) -> "LayoutWrapper":
         return cast(
             "LayoutWrapper",
             self.layout(),

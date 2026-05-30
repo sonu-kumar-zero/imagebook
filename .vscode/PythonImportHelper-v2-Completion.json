@@ -88,6 +88,14 @@
         "documentation": {}
     },
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "Any",
         "importPath": "typing",
         "description": "typing",
@@ -144,6 +152,22 @@
         "documentation": {}
     },
     {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeAlias",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "TYPE_CHECKING",
         "importPath": "typing",
         "description": "typing",
@@ -169,6 +193,22 @@
     },
     {
         "label": "cast",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeAlias",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -256,6 +296,14 @@
         "documentation": {}
     },
     {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
         "label": "QEvent",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
@@ -320,6 +368,14 @@
         "documentation": {}
     },
     {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
         "label": "QEvent",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
@@ -345,6 +401,14 @@
     },
     {
         "label": "QByteArray",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
         "isExtraImport": true,
@@ -536,6 +600,22 @@
         "documentation": {}
     },
     {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QFrame",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -625,6 +705,30 @@
     },
     {
         "label": "QGraphicsDropShadowEffect",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSizePolicy",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -840,6 +944,30 @@
         "documentation": {}
     },
     {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSizePolicy",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QFrame",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -849,14 +977,6 @@
     },
     {
         "label": "QHBoxLayout",
-        "importPath": "PySide6.QtWidgets",
-        "description": "PySide6.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PySide6.QtWidgets",
-        "documentation": {}
-    },
-    {
-        "label": "QLabel",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -905,14 +1025,6 @@
     },
     {
         "label": "QWidget",
-        "importPath": "PySide6.QtWidgets",
-        "description": "PySide6.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PySide6.QtWidgets",
-        "documentation": {}
-    },
-    {
-        "label": "QLabel",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -1016,6 +1128,30 @@
         "documentation": {}
     },
     {
+        "label": "Variant",
+        "importPath": "app.ui.styles.types",
+        "description": "app.ui.styles.types",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.types",
+        "documentation": {}
+    },
+    {
+        "label": "theme",
+        "importPath": "app.ui.styles.theme",
+        "description": "app.ui.styles.theme",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.theme",
+        "documentation": {}
+    },
+    {
+        "label": "theme",
+        "importPath": "app.ui.styles.theme",
+        "description": "app.ui.styles.theme",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.theme",
+        "documentation": {}
+    },
+    {
         "label": "theme",
         "importPath": "app.ui.styles.theme",
         "description": "app.ui.styles.theme",
@@ -1069,6 +1205,22 @@
         "description": "dataclasses",
         "isExtraImport": true,
         "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
         "documentation": {}
     },
     {
@@ -1141,6 +1293,150 @@
         "description": "app.ui.widgets.kscroll_area",
         "isExtraImport": true,
         "detail": "app.ui.widgets.kscroll_area",
+        "documentation": {}
+    },
+    {
+        "label": "FrameWrapper",
+        "importPath": "app.ui.widgets.kframe",
+        "description": "app.ui.widgets.kframe",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.kframe",
+        "documentation": {}
+    },
+    {
+        "label": "FrameWrapper",
+        "importPath": "app.ui.widgets.kframe",
+        "description": "app.ui.widgets.kframe",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.kframe",
+        "documentation": {}
+    },
+    {
+        "label": "FrameWrapper",
+        "importPath": "app.ui.widgets.kframe",
+        "description": "app.ui.widgets.kframe",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.kframe",
+        "documentation": {}
+    },
+    {
+        "label": "FrameWrapper",
+        "importPath": "app.ui.widgets.kframe",
+        "description": "app.ui.widgets.kframe",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.kframe",
+        "documentation": {}
+    },
+    {
+        "label": "FrameWrapper",
+        "importPath": "app.ui.widgets.kframe",
+        "description": "app.ui.widgets.kframe",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.kframe",
+        "documentation": {}
+    },
+    {
+        "label": "FrameWrapper",
+        "importPath": "app.ui.widgets.kframe",
+        "description": "app.ui.widgets.kframe",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.kframe",
+        "documentation": {}
+    },
+    {
+        "label": "LayoutWrapper",
+        "importPath": "app.ui.widgets.klayout_box",
+        "description": "app.ui.widgets.klayout_box",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.klayout_box",
+        "documentation": {}
+    },
+    {
+        "label": "LayoutWrapper",
+        "importPath": "app.ui.widgets.klayout_box",
+        "description": "app.ui.widgets.klayout_box",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.klayout_box",
+        "documentation": {}
+    },
+    {
+        "label": "LayoutWrapper",
+        "importPath": "app.ui.widgets.klayout_box",
+        "description": "app.ui.widgets.klayout_box",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.klayout_box",
+        "documentation": {}
+    },
+    {
+        "label": "LayoutWrapper",
+        "importPath": "app.ui.widgets.klayout_box",
+        "description": "app.ui.widgets.klayout_box",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.klayout_box",
+        "documentation": {}
+    },
+    {
+        "label": "LayoutWrapper",
+        "importPath": "app.ui.widgets.klayout_box",
+        "description": "app.ui.widgets.klayout_box",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.klayout_box",
+        "documentation": {}
+    },
+    {
+        "label": "LayoutWrapper",
+        "importPath": "app.ui.widgets.klayout_box",
+        "description": "app.ui.widgets.klayout_box",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.klayout_box",
+        "documentation": {}
+    },
+    {
+        "label": "tw",
+        "importPath": "app.ui.styles.utilities",
+        "description": "app.ui.styles.utilities",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "tw",
+        "importPath": "app.ui.styles.utilities",
+        "description": "app.ui.styles.utilities",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "TextWrapper",
+        "importPath": "app.ui.widgets.text_wrapper",
+        "description": "app.ui.widgets.text_wrapper",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.text_wrapper",
+        "documentation": {}
+    },
+    {
+        "label": "TextWrapper",
+        "importPath": "app.ui.widgets.text_wrapper",
+        "description": "app.ui.widgets.text_wrapper",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.text_wrapper",
+        "documentation": {}
+    },
+    {
+        "label": "FontWeight",
+        "importPath": "app.ui.widgets.text_wrapper",
+        "description": "app.ui.widgets.text_wrapper",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.text_wrapper",
+        "documentation": {}
+    },
+    {
+        "label": "TextWrapper",
+        "importPath": "app.ui.widgets.text_wrapper",
+        "description": "app.ui.widgets.text_wrapper",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.text_wrapper",
         "documentation": {}
     },
     {
@@ -1177,6 +1473,22 @@
     },
     {
         "label": "QEnterEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QResizeEvent",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
         "isExtraImport": true,
@@ -1225,6 +1537,14 @@
     },
     {
         "label": "QPalette",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QFont",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
         "isExtraImport": true,
@@ -1320,83 +1640,11 @@
         "documentation": {}
     },
     {
-        "label": "tw",
-        "importPath": "app.ui.styles.utilities",
-        "description": "app.ui.styles.utilities",
-        "isExtraImport": true,
-        "detail": "app.ui.styles.utilities",
-        "documentation": {}
-    },
-    {
-        "label": "tw",
-        "importPath": "app.ui.styles.utilities",
-        "description": "app.ui.styles.utilities",
-        "isExtraImport": true,
-        "detail": "app.ui.styles.utilities",
-        "documentation": {}
-    },
-    {
-        "label": "tw",
-        "importPath": "app.ui.styles.utilities",
-        "description": "app.ui.styles.utilities",
-        "isExtraImport": true,
-        "detail": "app.ui.styles.utilities",
-        "documentation": {}
-    },
-    {
         "label": "Callable",
         "importPath": "collections.abc",
         "description": "collections.abc",
         "isExtraImport": true,
         "detail": "collections.abc",
-        "documentation": {}
-    },
-    {
-        "label": "LayoutWrapper",
-        "importPath": "app.ui.widgets.klayout_box",
-        "description": "app.ui.widgets.klayout_box",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.klayout_box",
-        "documentation": {}
-    },
-    {
-        "label": "LayoutWrapper",
-        "importPath": "app.ui.widgets.klayout_box",
-        "description": "app.ui.widgets.klayout_box",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.klayout_box",
-        "documentation": {}
-    },
-    {
-        "label": "LayoutWrapper",
-        "importPath": "app.ui.widgets.klayout_box",
-        "description": "app.ui.widgets.klayout_box",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.klayout_box",
-        "documentation": {}
-    },
-    {
-        "label": "FrameWrapper",
-        "importPath": "app.ui.widgets.kframe",
-        "description": "app.ui.widgets.kframe",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.kframe",
-        "documentation": {}
-    },
-    {
-        "label": "FrameWrapper",
-        "importPath": "app.ui.widgets.kframe",
-        "description": "app.ui.widgets.kframe",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.kframe",
-        "documentation": {}
-    },
-    {
-        "label": "FrameWrapper",
-        "importPath": "app.ui.widgets.kframe",
-        "description": "app.ui.widgets.kframe",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.kframe",
         "documentation": {}
     },
     {
@@ -1413,14 +1661,6 @@
         "description": "PySide6.QtSvg",
         "isExtraImport": true,
         "detail": "PySide6.QtSvg",
-        "documentation": {}
-    },
-    {
-        "label": "dprint",
-        "importPath": "app.core.logger",
-        "description": "app.core.logger",
-        "isExtraImport": true,
-        "detail": "app.core.logger",
         "documentation": {}
     },
     {
@@ -1544,27 +1784,11 @@
         "documentation": {}
     },
     {
-        "label": "Header",
-        "importPath": "app.ui.widgets.header_home_screen",
-        "description": "app.ui.widgets.header_home_screen",
+        "label": "HomeContentArea",
+        "importPath": "app.ui.widgets.home_window.HomeContentArea",
+        "description": "app.ui.widgets.home_window.HomeContentArea",
         "isExtraImport": true,
-        "detail": "app.ui.widgets.header_home_screen",
-        "documentation": {}
-    },
-    {
-        "label": "ActionCard",
-        "importPath": "app.ui.widgets.action_card_home_screen",
-        "description": "app.ui.widgets.action_card_home_screen",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.action_card_home_screen",
-        "documentation": {}
-    },
-    {
-        "label": "SectionFrame",
-        "importPath": "app.ui.widgets.section_frame_home_screen",
-        "description": "app.ui.widgets.section_frame_home_screen",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.section_frame_home_screen",
+        "detail": "app.ui.widgets.home_window.HomeContentArea",
         "documentation": {}
     },
     {
@@ -1744,6 +1968,15 @@
         "documentation": {}
     },
     {
+        "label": "HomeContentArea",
+        "kind": 6,
+        "importPath": "app.ui.widgets.home_window.HomeContentArea",
+        "description": "app.ui.widgets.home_window.HomeContentArea",
+        "peekOfCode": "class HomeContentArea(FrameWrapper):\n    def __init__(\n        self,\n        parent: QWidget | None = None,\n    ) -> None:\n        super().__init__(\n            parent=parent,\n            shape=\"styled\",\n            shadow=\"plain\",\n            object_name=\"home-content-area\",",
+        "detail": "app.ui.widgets.home_window.HomeContentArea",
+        "documentation": {}
+    },
+    {
         "label": "ActionCard",
         "kind": 6,
         "importPath": "app.ui.widgets.action_card_home_screen",
@@ -1777,6 +2010,15 @@
         "description": "app.ui.widgets.image_card_card_screen",
         "peekOfCode": "class ImageCard(QFrame):\n    CARD_WIDTH: Final[int] = 320\n    CARD_HEIGHT: Final[int] = 420\n    IMAGE_HEIGHT: Final[int] = 250\n    def __init__(self, image_path: str, title: str, subtitle: str) -> None:\n        super().__init__()\n        self.image_path = image_path\n        self.title_text = title\n        self.subtitle_text = subtitle\n        self.setCursor(Qt.CursorShape.PointingHandCursor)",
         "detail": "app.ui.widgets.image_card_card_screen",
+        "documentation": {}
+    },
+    {
+        "label": "ImageWrapper",
+        "kind": 6,
+        "importPath": "app.ui.widgets.image_wrapper",
+        "description": "app.ui.widgets.image_wrapper",
+        "peekOfCode": "class ImageWrapper(QLabel):\n    def __init__(\n        self,\n        *,\n        parent: QWidget | None = None,\n        image_path: str | Path | None = None,\n        width: int | None = None,\n        height: int | None = None,\n        fit: ImageFit = \"contain\",\n        alignment: Qt.AlignmentFlag = (",
+        "detail": "app.ui.widgets.image_wrapper",
         "documentation": {}
     },
     {
@@ -1829,7 +2071,7 @@
         "kind": 2,
         "importPath": "app.ui.widgets.load_svg_pixmap",
         "description": "app.ui.widgets.load_svg_pixmap",
-        "peekOfCode": "def load_svg_pixmap(\n    path: Path,\n    color: str = theme.ACCENT,\n    size: int = 24,\n) -> QPixmap:\n    svg_text = path.read_text(encoding=\"utf-8\")\n    dprint(__file__, f\"SVG text: {svg_text[:200]}...\")  # Debug: print the first 100 characters of the SVG\n    # Replace stroke color\n    svg_text = svg_text.replace(\n        'stroke=\"currentColor\"',",
+        "peekOfCode": "def load_svg_pixmap(\n    path: Path,\n    color: str = theme.ACCENT,\n    size: int = 24,\n) -> QPixmap:\n    svg_text = path.read_text(encoding=\"utf-8\")\n    # Replace stroke color\n    svg_text = svg_text.replace(\n        'stroke=\"currentColor\"',\n        f'stroke=\"{color}\"'",
         "detail": "app.ui.widgets.load_svg_pixmap",
         "documentation": {}
     },
@@ -1867,6 +2109,15 @@
         "description": "app.ui.widgets.side_bar",
         "peekOfCode": "class SideBar(FrameWrapper):\n    def __init__(self, parent: QWidget | None = None) -> None:\n        super().__init__(\n            parent=parent,\n            object_name=\"sidebar\",\n            fixed_width=CONFIG.SIDEBAR.WIDTH,\n            expand_width=False,\n            layout=LayoutWrapper(\n                direction=\"vertical\",\n                margins=(30, 20, 0, 20),",
         "detail": "app.ui.widgets.side_bar",
+        "documentation": {}
+    },
+    {
+        "label": "TextWrapper",
+        "kind": 6,
+        "importPath": "app.ui.widgets.text_wrapper",
+        "description": "app.ui.widgets.text_wrapper",
+        "peekOfCode": "class TextWrapper(FrameWrapper):\n    def __init__(\n        self,\n        *,\n        parent: QWidget | None = None,\n        text: str = \"\",\n        font_size: int = 14,\n        font_weight: FontWeight = (\"normal\"),\n        alignment: Qt.AlignmentFlag = (\n            Qt.AlignmentFlag.AlignLeft",
+        "detail": "app.ui.widgets.text_wrapper",
         "documentation": {}
     },
     {

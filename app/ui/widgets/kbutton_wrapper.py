@@ -17,6 +17,7 @@ from app.ui.widgets.klayout_box import (
 from app.ui.widgets.kframe import FrameWrapper
 from pathlib import Path
 from app.ui.widgets.load_svg_pixmap import load_svg_pixmap
+from app.ui.widgets.text_wrapper import TextWrapper, FontWeight
 
 class ButtonWrapper(QWidget):
 
@@ -35,7 +36,7 @@ class ButtonWrapper(QWidget):
         radius: int = 16,
         padding_x: int = 20,
         font_size: int = 14,
-        font_weight: int = 600,
+        font_weight: FontWeight = "normal",
         text_color: str = "#FFFFFF",
         bg_color: str = "#7C5CFF",
         hover_color: str = "#9374FF",
@@ -115,7 +116,12 @@ class ButtonWrapper(QWidget):
                     icon_label
                 )
 
-            text_label = QLabel(text)
+            text_label = TextWrapper(
+                text=text,
+                color=text_color,
+                font_size=font_size,
+                font_weight="normal",
+            )
 
             frame.layout_ref.addWidget(
                 text_label

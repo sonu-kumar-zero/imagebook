@@ -1,17 +1,10 @@
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
-    QLabel,
     QMainWindow,
     QWidget,
 )
 
-from app.ui.widgets.header_home_screen import Header
-from app.ui.widgets.action_card_home_screen import (
-    ActionCard,
-)
-from app.ui.widgets.section_frame_home_screen import (
-    SectionFrame,
-)
+from app.ui.widgets.home_window.HomeContentArea import HomeContentArea
 from app.ui.widgets.kframe import (
     FrameWrapper,
 )
@@ -26,7 +19,6 @@ from app.ui.widgets.top_bar_home_screen import (
 from app.utils.constants import CONFIG
 from app.ui.styles.helpers import set_variant
 from app.ui.styles.stylesheet import APP_STYLE
-from app.ui.styles.utilities import tw
 
 
 class HomeWindow(QMainWindow):
@@ -101,81 +93,9 @@ class HomeWindow(QMainWindow):
         # ==================================
         # CONTENT FRAME
         # ==================================
-
-        content_layout = LayoutWrapper(
-            direction="vertical",
-            margins=(30, 0, 30, 30),
-            spacing=20,
-        )
-
-        content = FrameWrapper(
-            object_name="content",
-            layout=content_layout,
-        )
-
+        
+        content = HomeContentArea()
         body_layout.addWidget(content, 1)
 
-        # ==================================
-        # HEADER
-        # ==================================
-
-        header = Header(
-            title="ImageBook",
-            subtitle="Create beautiful image books",
-        )
-
-        header.setStyleSheet(tw("title"))
-
-        content_layout.addWidget(header)
-
-        # ==================================
-        # ACTIONS
-        # ==================================
-
-        actions_layout = LayoutWrapper(
-            direction="horizontal",
-            spacing=20,
-        )
-
-        new_card = ActionCard(
-            title="Create New Project",
-            description="Start from scratch",
-        )
-
-        open_card = ActionCard(
-            title="Open Existing Project",
-            description="Continue your work",
-        )
-
-        actions_layout.addWidget(new_card)
-        actions_layout.addWidget(open_card)
-
-        content_layout.addWidget(actions_layout)
-
-        # ==================================
-        # RECENT
-        # ==================================
-
-        recent = SectionFrame("Recent Projects")
-
-        recent.add_widget(
-            QLabel("No recent projects")
-        )
-
-        content_layout.addWidget(recent)
-
-        content_layout.addStretch()
-
-        # ==================================
-        # FOOTER
-        # ==================================
-
-        footer = QLabel("ImageBook v1.0")
-
-        footer.setAlignment(
-            Qt.AlignmentFlag.AlignRight
-        )
-
-        content_layout.addWidget(footer)
 
         self.setCentralWidget(root)

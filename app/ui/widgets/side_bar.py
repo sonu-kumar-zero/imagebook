@@ -37,8 +37,6 @@ class SideBar(FrameWrapper):
     def _setup_ui(self) -> None:
         layout = self.layout_ref
 
-        self._separator()
-
         navigation_items: list[NavigationItem] = [
             NavigationItem(key="home", text="Home", iconPath=Icons.HOME.path),
             NavigationItem(key="explore", text="Explore", iconPath=Icons.EXPLORE.path),

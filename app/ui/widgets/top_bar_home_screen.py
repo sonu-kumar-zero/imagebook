@@ -6,17 +6,16 @@ from PySide6.QtGui import (
 from PySide6.QtWidgets import (
     QFrame,
     QHBoxLayout,
-    QLabel,
     QSizePolicy,
     QWidget,
 )
 
 from app.ui.assets.icons import Icons
 from app.ui.widgets.window_control_button import WindowControlButton
-from app.ui.styles.helpers import set_variant
-from app.ui.styles.utilities import tw
 from app.ui.widgets.colored_icons import colored_icon
 from app.utils.constants import CONFIG
+from app.ui.widgets.text_wrapper import TextWrapper
+from app.ui.styles.theme import theme
 
 
 class TopBar(QFrame):
@@ -53,12 +52,14 @@ class TopBar(QFrame):
         layout.setSpacing(12)
 
         # Left side
-        # menu_button = WindowControlButton(Icons.MENU.path)
-
-        title_label = QLabel(CONFIG.WINDOW.TITLE_CAMELCASE)
-        set_variant(title_label, "title")
-        title_label.setStyleSheet(tw("text-accent"))
-
+        title_label = TextWrapper(
+            text=CONFIG.WINDOW.TITLE_CAMELCASE,
+            variant="title",
+            color=theme.TEXT_ACCENT,
+            font_size=16,
+            font_weight="medium",
+        )
+        
         # Spacer
         spacer = QWidget()
         spacer.setSizePolicy(
@@ -78,7 +79,6 @@ class TopBar(QFrame):
 
         self.maximize_button.clicked.connect(self.toggle_maximize)
 
-        # layout.addWidget(menu_button)
         layout.addWidget(title_label)
         layout.addWidget(spacer)
 
