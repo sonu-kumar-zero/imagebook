@@ -111,6 +111,12 @@ class LayoutWrapper(QWidget):
                 stretch,
             )
             return
+        
+        if alignment == Qt.AlignmentFlag.AlignCenter:
+            self._layout.addStretch()
+            self._layout.addWidget(widget, stretch, Qt.AlignmentFlag.AlignCenter)
+            self._layout.addStretch()
+            return
 
         self._layout.addWidget(
             widget,

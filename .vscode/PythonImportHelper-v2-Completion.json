@@ -1296,6 +1296,14 @@
         "documentation": {}
     },
     {
+        "label": "KScrollArea",
+        "importPath": "app.ui.widgets.kscroll_area",
+        "description": "app.ui.widgets.kscroll_area",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.kscroll_area",
+        "documentation": {}
+    },
+    {
         "label": "FrameWrapper",
         "importPath": "app.ui.widgets.kframe",
         "description": "app.ui.widgets.kframe",
@@ -1437,6 +1445,46 @@
         "description": "app.ui.widgets.text_wrapper",
         "isExtraImport": true,
         "detail": "app.ui.widgets.text_wrapper",
+        "documentation": {}
+    },
+    {
+        "label": "ButtonWrapper",
+        "importPath": "app.ui.widgets.kbutton_wrapper",
+        "description": "app.ui.widgets.kbutton_wrapper",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.kbutton_wrapper",
+        "documentation": {}
+    },
+    {
+        "label": "ButtonWrapper",
+        "importPath": "app.ui.widgets.kbutton_wrapper",
+        "description": "app.ui.widgets.kbutton_wrapper",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.kbutton_wrapper",
+        "documentation": {}
+    },
+    {
+        "label": "Icons",
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.icons",
+        "documentation": {}
+    },
+    {
+        "label": "Icons",
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.icons",
+        "documentation": {}
+    },
+    {
+        "label": "Icons",
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.icons",
         "documentation": {}
     },
     {
@@ -1664,14 +1712,6 @@
         "documentation": {}
     },
     {
-        "label": "ButtonWrapper",
-        "importPath": "app.ui.widgets.kbutton_wrapper",
-        "description": "app.ui.widgets.kbutton_wrapper",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.kbutton_wrapper",
-        "documentation": {}
-    },
-    {
         "label": "CONFIG",
         "importPath": "app.utils.constants",
         "description": "app.utils.constants",
@@ -1693,22 +1733,6 @@
         "description": "app.utils.constants",
         "isExtraImport": true,
         "detail": "app.utils.constants",
-        "documentation": {}
-    },
-    {
-        "label": "Icons",
-        "importPath": "app.ui.assets.icons",
-        "description": "app.ui.assets.icons",
-        "isExtraImport": true,
-        "detail": "app.ui.assets.icons",
-        "documentation": {}
-    },
-    {
-        "label": "Icons",
-        "importPath": "app.ui.assets.icons",
-        "description": "app.ui.assets.icons",
-        "isExtraImport": true,
-        "detail": "app.ui.assets.icons",
         "documentation": {}
     },
     {

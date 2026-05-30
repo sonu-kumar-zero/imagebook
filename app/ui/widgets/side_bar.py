@@ -50,8 +50,6 @@ class SideBar(FrameWrapper):
 
         layout.addStretch()
 
-        self._separator()
-
         footer_items: list[NavigationItem] = [
             NavigationItem(key="settings", text="Settings", iconPath=Icons.SETTINGS.path),
             NavigationItem(key="profile", text="Profile", iconPath=Icons.USER.path),

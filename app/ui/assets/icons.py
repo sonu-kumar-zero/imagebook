@@ -20,6 +20,7 @@ class Icons(StrEnum):
     HOME = "home.svg"
     SETTINGS = "settings.svg"
     USER = "user.svg"
+    ADD = "add.svg"
 
     @property
     def path(self) -> Path:

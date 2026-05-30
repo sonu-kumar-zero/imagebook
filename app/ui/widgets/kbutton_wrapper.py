@@ -43,6 +43,7 @@ class ButtonWrapper(QWidget):
         pressed_color: str = "#5A3DFF",
         border_color: str = "transparent",
         border_width: int = 0,
+        alignment: Qt.AlignmentFlag = Qt.AlignmentFlag.AlignLeft,
         callback: Callable[[], None]
         | None = None,
     ) -> None:
@@ -50,9 +51,11 @@ class ButtonWrapper(QWidget):
 
         root = LayoutWrapper(
             direction="vertical",
-            margins=(0, 0, 0, 0),
-            spacing=0,
+            margins=(padding_x, 0, padding_x, 0),
+            spacing=spacing,
+            alignment=alignment,
         )
+        
 
         self.setLayout(root.layout_ref)
 
@@ -85,22 +88,15 @@ class ButtonWrapper(QWidget):
         # CUSTOM CONTENT MODE
         # ==========================
         else:
-            frame.layout_ref.setSpacing(
-                spacing
-            )
-
-            frame.layout_ref.setContentsMargins(
-                padding_x,
-                0,
-                padding_x,
-                0,
-            )
-
+            frame.layout_ref.setContentsMargins(padding_x, 0, padding_x, 0)
+            frame.layout_ref.setSpacing(spacing)
+            
             if icon_path:
                 icon_label = QLabel()
 
                 pixmap = load_svg_pixmap(
-                    path=icon_path
+                    path=icon_path,
+                    color=text_color,
                 )
 
                 icon_label.setPixmap(
@@ -123,34 +119,17 @@ class ButtonWrapper(QWidget):
                 font_weight="normal",
             )
 
-            frame.layout_ref.addWidget(
-                text_label
-            )
-
-            frame.layout_ref.addStretch()
+            frame.layout_ref.addWidget(text_label)
 
             # Put custom widget inside button
-            frame.setParent(
-                self.button
-            )
-
-            frame.setGeometry(
-                self.button.rect()
-            )
-            
-            frame.setParent(
-                self.button
-            )
+            frame.setParent(self.button)
 
             frame.setAttribute(
                 Qt.WidgetAttribute
                 .WA_TransparentForMouseEvents,
                 True,
             )
-
-            frame.setGeometry(
-                self.button.rect()
-            )
+            frame.resize(self.button.size())
 
             self.frame = frame
 
