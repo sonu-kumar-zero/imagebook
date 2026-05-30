@@ -416,6 +416,70 @@
         "documentation": {}
     },
     {
+        "label": "QPropertyAnimation",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEasingCurve",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QPoint",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QParallelAnimationGroup",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QTimer",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QSize",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
         "label": "QEvent",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
@@ -921,6 +985,70 @@
     },
     {
         "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QStackedWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSizePolicy",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -1632,11 +1760,11 @@
         "documentation": {}
     },
     {
-        "label": "ButtonWrapper2",
-        "importPath": "app.ui.widgets.button_wrapper2",
-        "description": "app.ui.widgets.button_wrapper2",
+        "label": "Icons",
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
         "isExtraImport": true,
-        "detail": "app.ui.widgets.button_wrapper2",
+        "detail": "app.ui.assets.icons",
         "documentation": {}
     },
     {
@@ -1648,11 +1776,11 @@
         "documentation": {}
     },
     {
-        "label": "FrameWrapper2",
-        "importPath": "app.ui.widgets.frame_wrapper2",
-        "description": "app.ui.widgets.frame_wrapper2",
+        "label": "ButtonWrapper2",
+        "importPath": "app.ui.widgets.button_wrapper2",
+        "description": "app.ui.widgets.button_wrapper2",
         "isExtraImport": true,
-        "detail": "app.ui.widgets.frame_wrapper2",
+        "detail": "app.ui.widgets.button_wrapper2",
         "documentation": {}
     },
     {
@@ -1672,6 +1800,14 @@
         "documentation": {}
     },
     {
+        "label": "FrameWrapper2",
+        "importPath": "app.ui.widgets.frame_wrapper2",
+        "description": "app.ui.widgets.frame_wrapper2",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.frame_wrapper2",
+        "documentation": {}
+    },
+    {
         "label": "BaseLayout",
         "importPath": "app.ui.widgets.base_layout",
         "description": "app.ui.widgets.base_layout",
@@ -1768,27 +1904,11 @@
         "documentation": {}
     },
     {
-        "label": "tw",
-        "importPath": "app.ui.styles.utilities",
-        "description": "app.ui.styles.utilities",
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
         "isExtraImport": true,
-        "detail": "app.ui.styles.utilities",
-        "documentation": {}
-    },
-    {
-        "label": "tw",
-        "importPath": "app.ui.styles.utilities",
-        "description": "app.ui.styles.utilities",
-        "isExtraImport": true,
-        "detail": "app.ui.styles.utilities",
-        "documentation": {}
-    },
-    {
-        "label": "GreetingContainer",
-        "importPath": "app.ui.widgets.home_window.GreetingContainer",
-        "description": "app.ui.widgets.home_window.GreetingContainer",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.home_window.GreetingContainer",
+        "detail": "PySide6.QtGui",
         "documentation": {}
     },
     {
@@ -1841,6 +1961,70 @@
     },
     {
         "label": "QPainter",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPainter",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QColor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QFont",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPaintEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QResizeEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QEnterEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QIcon",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
         "isExtraImport": true,
@@ -1984,6 +2168,62 @@
         "documentation": {}
     },
     {
+        "label": "tw",
+        "importPath": "app.ui.styles.utilities",
+        "description": "app.ui.styles.utilities",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "tw",
+        "importPath": "app.ui.styles.utilities",
+        "description": "app.ui.styles.utilities",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "GreetingContainer",
+        "importPath": "app.ui.widgets.home_window.GreetingContainer",
+        "description": "app.ui.widgets.home_window.GreetingContainer",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.home_window.GreetingContainer",
+        "documentation": {}
+    },
+    {
+        "label": "ImageCarousel",
+        "importPath": "app.ui.widgets.horizontal_carousal",
+        "description": "app.ui.widgets.horizontal_carousal",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.horizontal_carousal",
+        "documentation": {}
+    },
+    {
+        "label": "Images",
+        "importPath": "app.ui.assets.images",
+        "description": "app.ui.assets.images",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.images",
+        "documentation": {}
+    },
+    {
+        "label": "Images",
+        "importPath": "app.ui.assets.images",
+        "description": "app.ui.assets.images",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.images",
+        "documentation": {}
+    },
+    {
+        "label": "load_svg_pixmap",
+        "importPath": "app.ui.widgets.load_svg_pixmap",
+        "description": "app.ui.widgets.load_svg_pixmap",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.load_svg_pixmap",
+        "documentation": {}
+    },
+    {
         "label": "load_svg_pixmap",
         "importPath": "app.ui.widgets.load_svg_pixmap",
         "description": "app.ui.widgets.load_svg_pixmap",
@@ -2005,6 +2245,47 @@
         "description": "app.ui.widgets.load_svg_pixmap",
         "isExtraImport": true,
         "detail": "app.ui.widgets.load_svg_pixmap",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "isExtraImport": true,
+        "detail": "app.utils.constants",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "isExtraImport": true,
+        "detail": "app.utils.constants",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "isExtraImport": true,
+        "detail": "app.utils.constants",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "isExtraImport": true,
+        "detail": "app.utils.constants",
         "documentation": {}
     },
     {
@@ -2064,30 +2345,6 @@
         "documentation": {}
     },
     {
-        "label": "CONFIG",
-        "importPath": "app.utils.constants",
-        "description": "app.utils.constants",
-        "isExtraImport": true,
-        "detail": "app.utils.constants",
-        "documentation": {}
-    },
-    {
-        "label": "CONFIG",
-        "importPath": "app.utils.constants",
-        "description": "app.utils.constants",
-        "isExtraImport": true,
-        "detail": "app.utils.constants",
-        "documentation": {}
-    },
-    {
-        "label": "CONFIG",
-        "importPath": "app.utils.constants",
-        "description": "app.utils.constants",
-        "isExtraImport": true,
-        "detail": "app.utils.constants",
-        "documentation": {}
-    },
-    {
         "label": "WindowControlButton",
         "importPath": "app.ui.widgets.window_control_button",
         "description": "app.ui.widgets.window_control_button",
@@ -2144,14 +2401,6 @@
         "documentation": {}
     },
     {
-        "label": "Images",
-        "importPath": "app.ui.assets.images",
-        "description": "app.ui.assets.images",
-        "isExtraImport": true,
-        "detail": "app.ui.assets.images",
-        "documentation": {}
-    },
-    {
         "label": "HorizontalCardScrollArea",
         "importPath": "app.ui.widgets.card_window.horizontal_card_scroll_area",
         "description": "app.ui.widgets.card_window.horizontal_card_scroll_area",
@@ -2189,15 +2438,6 @@
         "description": "app.utils.paths",
         "isExtraImport": true,
         "detail": "app.utils.paths",
-        "documentation": {}
-    },
-    {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
         "documentation": {}
     },
     {
@@ -2515,6 +2755,69 @@
         "documentation": {}
     },
     {
+        "label": "ImageSlide",
+        "kind": 6,
+        "importPath": "app.ui.widgets.horizontal_carousal",
+        "description": "app.ui.widgets.horizontal_carousal",
+        "peekOfCode": "class ImageSlide(QLabel):\n    \"\"\"A single slide that displays an image with aspect-ratio-contain scaling.\"\"\"\n    def __init__(self, pixmap: QPixmap | None = None, placeholder_text: str = \"No Image\", parent: QWidget | None = None):\n        super().__init__(parent)\n        self._pixmap = pixmap\n        self._placeholder_text = placeholder_text\n        self.setAlignment(Qt.AlignmentFlag.AlignCenter)\n        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)\n        self.setMinimumHeight(CAROUSEL_HEIGHT)\n        self.setStyleSheet(\"background-color: #1a1a1a;\")",
+        "detail": "app.ui.widgets.horizontal_carousal",
+        "documentation": {}
+    },
+    {
+        "label": "NavButton",
+        "kind": 6,
+        "importPath": "app.ui.widgets.horizontal_carousal",
+        "description": "app.ui.widgets.horizontal_carousal",
+        "peekOfCode": "class NavButton(QPushButton):\n    \"\"\"Styled left/right navigation arrow button.\"\"\"\n    def __init__(self, direction: str, parent: QWidget | None = None):\n        \"\"\"\n        Args:\n            direction: \"left\" or \"right\"\n        \"\"\"\n        super().__init__(parent)\n        icon_path = Icons.LEFT.path if direction == \"left\" else Icons.RIGHT.path\n        pixmap = load_svg_pixmap(icon_path, color=\"white\", size=24)",
+        "detail": "app.ui.widgets.horizontal_carousal",
+        "documentation": {}
+    },
+    {
+        "label": "DotIndicator",
+        "kind": 6,
+        "importPath": "app.ui.widgets.horizontal_carousal",
+        "description": "app.ui.widgets.horizontal_carousal",
+        "peekOfCode": "class DotIndicator(QWidget):\n    \"\"\"Dot pagination indicator bar.\"\"\"\n    def __init__(self, count: int, parent: QWidget | None = None):\n        super().__init__(parent)\n        self._count = count\n        self._current = 0\n        self.setFixedHeight(20)\n        # safer placement for transparency flag\n        self.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents, True)\n        # optional but recommended for custom-painted widgets",
+        "detail": "app.ui.widgets.horizontal_carousal",
+        "documentation": {}
+    },
+    {
+        "label": "ImageCarousel",
+        "kind": 6,
+        "importPath": "app.ui.widgets.horizontal_carousal",
+        "description": "app.ui.widgets.horizontal_carousal",
+        "peekOfCode": "class ImageCarousel(QWidget):\n    \"\"\"\n    Horizontal image carousel with slide animation.\n    Usage:\n        carousel = ImageCarousel()\n        carousel.addImage(QPixmap(\"photo1.jpg\"))\n        carousel.addImage(QPixmap(\"photo2.jpg\"))\n        carousel.addPixmapFromPath(\"photo3.png\")\n        # Add to your vertical layout:\n        your_vertical_layout.addWidget(carousel)",
+        "detail": "app.ui.widgets.horizontal_carousal",
+        "documentation": {}
+    },
+    {
+        "label": "CAROUSEL_HEIGHT",
+        "kind": 5,
+        "importPath": "app.ui.widgets.horizontal_carousal",
+        "description": "app.ui.widgets.horizontal_carousal",
+        "peekOfCode": "CAROUSEL_HEIGHT = CONFIG.CAROUSEL.HEIGHT\nANIMATION_DURATION = CONFIG.CAROUSEL.ANIMATION_DURATION\nAUTO_SCROLL_INTERVAL = CONFIG.CAROUSEL.AUTO_SCROLL_INTERVAL\nclass ImageSlide(QLabel):\n    \"\"\"A single slide that displays an image with aspect-ratio-contain scaling.\"\"\"\n    def __init__(self, pixmap: QPixmap | None = None, placeholder_text: str = \"No Image\", parent: QWidget | None = None):\n        super().__init__(parent)\n        self._pixmap = pixmap\n        self._placeholder_text = placeholder_text\n        self.setAlignment(Qt.AlignmentFlag.AlignCenter)",
+        "detail": "app.ui.widgets.horizontal_carousal",
+        "documentation": {}
+    },
+    {
+        "label": "ANIMATION_DURATION",
+        "kind": 5,
+        "importPath": "app.ui.widgets.horizontal_carousal",
+        "description": "app.ui.widgets.horizontal_carousal",
+        "peekOfCode": "ANIMATION_DURATION = CONFIG.CAROUSEL.ANIMATION_DURATION\nAUTO_SCROLL_INTERVAL = CONFIG.CAROUSEL.AUTO_SCROLL_INTERVAL\nclass ImageSlide(QLabel):\n    \"\"\"A single slide that displays an image with aspect-ratio-contain scaling.\"\"\"\n    def __init__(self, pixmap: QPixmap | None = None, placeholder_text: str = \"No Image\", parent: QWidget | None = None):\n        super().__init__(parent)\n        self._pixmap = pixmap\n        self._placeholder_text = placeholder_text\n        self.setAlignment(Qt.AlignmentFlag.AlignCenter)\n        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)",
+        "detail": "app.ui.widgets.horizontal_carousal",
+        "documentation": {}
+    },
+    {
+        "label": "AUTO_SCROLL_INTERVAL",
+        "kind": 5,
+        "importPath": "app.ui.widgets.horizontal_carousal",
+        "description": "app.ui.widgets.horizontal_carousal",
+        "peekOfCode": "AUTO_SCROLL_INTERVAL = CONFIG.CAROUSEL.AUTO_SCROLL_INTERVAL\nclass ImageSlide(QLabel):\n    \"\"\"A single slide that displays an image with aspect-ratio-contain scaling.\"\"\"\n    def __init__(self, pixmap: QPixmap | None = None, placeholder_text: str = \"No Image\", parent: QWidget | None = None):\n        super().__init__(parent)\n        self._pixmap = pixmap\n        self._placeholder_text = placeholder_text\n        self.setAlignment(Qt.AlignmentFlag.AlignCenter)\n        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)\n        self.setMinimumHeight(CAROUSEL_HEIGHT)",
+        "detail": "app.ui.widgets.horizontal_carousal",
+        "documentation": {}
+    },
+    {
         "label": "ImageCard",
         "kind": 6,
         "importPath": "app.ui.widgets.image_card_card_screen",
@@ -2618,7 +2921,7 @@
         "kind": 6,
         "importPath": "app.ui.widgets.side_bar",
         "description": "app.ui.widgets.side_bar",
-        "peekOfCode": "class SideBar(FrameWrapper2):\n    def __init__(self, parent: QWidget | None = None) -> None:\n        super().__init__(\n            parent=parent,\n            object_name=\"sidebar\",\n            fixed_width=CONFIG.SIDEBAR.WIDTH,\n            expand_width=False,\n            layout=BaseLayout(\n                direction=\"vertical\",\n                margins=(30, 20, 0, 20),",
+        "peekOfCode": "class SideBar(FrameWrapper2):\n    def __init__(self, parent: QWidget | None = None) -> None:\n        super().__init__(\n            parent=parent,\n            object_name=\"sidebar\",\n            fixed_width=CONFIG.SIDEBAR.WIDTH,\n            expand_width=False,\n            layout=BaseLayout(\n                direction=\"vertical\",\n                margins=(20, 20, 0, 20),",
         "detail": "app.ui.widgets.side_bar",
         "documentation": {}
     },
@@ -2708,7 +3011,16 @@
         "kind": 6,
         "importPath": "app.utils.constants",
         "description": "app.utils.constants",
-        "peekOfCode": "class SideBarConfig:\n    WIDTH:int = 260\n    COLLAPSE_THRESHOLD: int = 1220\n    COLLAPSE_WIDTH: int = 100\n@dataclass(frozen=True, slots=True)\nclass UIConfig:\n    WINDOW: WindowConfig = WindowConfig()\n    SIDEBAR: SideBarConfig = SideBarConfig()\nCONFIG = UIConfig()",
+        "peekOfCode": "class SideBarConfig:\n    WIDTH:int = 260\n    COLLAPSE_THRESHOLD: int = 1220\n    COLLAPSE_WIDTH: int = 100\n@dataclass(frozen=True, slots=True)\nclass CarousalConfig:\n    HEIGHT: int = 200\n    ANIMATION_DURATION: int = 350  # ms\n    AUTO_SCROLL_INTERVAL: int = 3000 # ms\n@dataclass(frozen=True, slots=True)",
+        "detail": "app.utils.constants",
+        "documentation": {}
+    },
+    {
+        "label": "CarousalConfig",
+        "kind": 6,
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "peekOfCode": "class CarousalConfig:\n    HEIGHT: int = 200\n    ANIMATION_DURATION: int = 350  # ms\n    AUTO_SCROLL_INTERVAL: int = 3000 # ms\n@dataclass(frozen=True, slots=True)\nclass UIConfig:\n    WINDOW: WindowConfig = WindowConfig()\n    SIDEBAR: SideBarConfig = SideBarConfig()\n    CAROUSEL: CarousalConfig = CarousalConfig()\nCONFIG = UIConfig()",
         "detail": "app.utils.constants",
         "documentation": {}
     },
@@ -2717,7 +3029,7 @@
         "kind": 6,
         "importPath": "app.utils.constants",
         "description": "app.utils.constants",
-        "peekOfCode": "class UIConfig:\n    WINDOW: WindowConfig = WindowConfig()\n    SIDEBAR: SideBarConfig = SideBarConfig()\nCONFIG = UIConfig()",
+        "peekOfCode": "class UIConfig:\n    WINDOW: WindowConfig = WindowConfig()\n    SIDEBAR: SideBarConfig = SideBarConfig()\n    CAROUSEL: CarousalConfig = CarousalConfig()\nCONFIG = UIConfig()",
         "detail": "app.utils.constants",
         "documentation": {}
     },

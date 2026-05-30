@@ -8,8 +8,10 @@ from app.ui.widgets.klayout_box import (
 )
 
 from PySide6.QtCore import Qt
+from PySide6.QtGui import QPixmap 
 from PySide6.QtWidgets import (
     QWidget,
+    
 )
 
 from app.ui.widgets.kframe import (
@@ -24,6 +26,8 @@ from app.ui.widgets.text_wrapper import TextWrapper
 from app.ui.styles.theme import theme
 from app.ui.widgets.kscroll_area import KScrollArea
 from app.ui.widgets.home_window.GreetingContainer import GreetingContainer
+from app.ui.widgets.horizontal_carousal import ImageCarousel
+from app.ui.assets.images import Images
 
 
 class HomeContentArea(FrameWrapper):
@@ -52,10 +56,18 @@ class HomeContentArea(FrameWrapper):
         scroll_container = KScrollArea(
             direction = "vertical",
             margins = (0,10,0,0),
+            spacing = 20,
         )
         
         greeting_container = GreetingContainer()
         scroll_container.addWidget(greeting_container)
+
+        # carousal
+        carousal_container = ImageCarousel()
+        scroll_container.addWidget(carousal_container)
+        for image in [Images.IMAGE1.path, Images.IMAGE2.path, Images.IMAGE3.path, Images.IMAGE4.path]:
+            carousal_container.addImage(QPixmap(str(image)))
+
 
         # ==================================
         # FOOTER

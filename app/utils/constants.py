@@ -15,11 +15,17 @@ class SideBarConfig:
     COLLAPSE_THRESHOLD: int = 1220
     COLLAPSE_WIDTH: int = 100
 
+@dataclass(frozen=True, slots=True)
+class CarousalConfig:
+    HEIGHT: int = 200
+    ANIMATION_DURATION: int = 350  # ms
+    AUTO_SCROLL_INTERVAL: int = 3000 # ms
 
 @dataclass(frozen=True, slots=True)
 class UIConfig:
     WINDOW: WindowConfig = WindowConfig()
     SIDEBAR: SideBarConfig = SideBarConfig()
+    CAROUSEL: CarousalConfig = CarousalConfig()
 
 
 CONFIG = UIConfig()

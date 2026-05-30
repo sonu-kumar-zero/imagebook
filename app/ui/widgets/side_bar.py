@@ -27,7 +27,7 @@ class SideBar(FrameWrapper2):
             expand_width=False,
             layout=BaseLayout(
                 direction="vertical",
-                margins=(30, 20, 0, 20),
+                margins=(20, 20, 0, 20),
                 spacing=15))
 
         self.buttons: dict[str, ButtonWrapper2] = {}
