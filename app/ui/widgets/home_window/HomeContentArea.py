@@ -28,6 +28,7 @@ from app.ui.widgets.kscroll_area import KScrollArea
 from app.ui.widgets.home_window.GreetingContainer import GreetingContainer
 from app.ui.widgets.horizontal_carousal import ImageCarousel
 from app.ui.assets.images import Images
+from app.ui.widgets.home_window.Faviourate_Cards_Area import FaviourateCardsArea
 
 
 class HomeContentArea(FrameWrapper):
@@ -68,6 +69,9 @@ class HomeContentArea(FrameWrapper):
         for image in [Images.IMAGE1.path, Images.IMAGE2.path, Images.IMAGE3.path, Images.IMAGE4.path]:
             carousal_container.addImage(QPixmap(str(image)))
 
+        # favourite cards
+        favourite_cards = FaviourateCardsArea()
+        scroll_container.addWidget(favourite_cards)
 
         # ==================================
         # FOOTER

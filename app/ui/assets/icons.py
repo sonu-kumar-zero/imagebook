@@ -23,6 +23,9 @@ class Icons(StrEnum):
     ADD = "add.svg"
     LEFT = "left.svg"
     RIGHT = "right.svg"
+    HEART = "heart.svg"
+    BOOKMARK = "bookmark.svg"
+    CLOCK = "clock.svg"
 
     @property
     def path(self) -> Path:

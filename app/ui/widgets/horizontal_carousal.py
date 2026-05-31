@@ -14,6 +14,7 @@ import sys
 from app.utils.constants import CONFIG
 from app.ui.widgets.load_svg_pixmap import load_svg_pixmap
 from app.ui.assets.icons import Icons
+from app.ui.styles.utilities import tw
 
 
 CAROUSEL_HEIGHT = CONFIG.CAROUSEL.HEIGHT
@@ -119,6 +120,7 @@ class DotIndicator(QWidget):
         self._count = count
         self._current = 0
         self.setFixedHeight(20)
+        self.setStyleSheet(tw("bg-surface-1"))
         # safer placement for transparency flag
         self.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents, True)
 
