@@ -46,6 +46,10 @@ UTILITIES: Final[dict[UtilityClass, str]] = {
     "bg-green": f"""
         background-color: "#00ff00";
     """,
+    
+    "bg-transparent": f"""
+        background-color: transparent;
+    """,
 
     # =========================
     # BORDERS
@@ -65,6 +69,8 @@ UTILITIES: Final[dict[UtilityClass, str]] = {
     "border-accent-hover": f"""
         border: 1px solid {theme.CARD_BORDER_HOVER};
     """,
+        
+    
 
     # =========================
     # RADIUS
@@ -83,6 +89,10 @@ UTILITIES: Final[dict[UtilityClass, str]] = {
 
     "rounded-input": f"""
         border-radius: {theme.RADIUS_INPUT}px;
+    """,
+    
+    "rounded-full": f"""
+        border-radius: {theme.RADIUS_FULL}px;
     """,
 
     # =========================
@@ -186,3 +196,7 @@ def tw(*classes: UtilityClass) -> str:
         UTILITIES[class_name]
         for class_name in classes
     )
+    
+def tw_selector(selector: str, *classes: UtilityClass) -> str:
+    """Wrap tw() utilities inside a CSS selector block."""
+    return f"{selector} {{ {tw(*classes)} }}"

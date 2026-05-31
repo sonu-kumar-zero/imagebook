@@ -376,6 +376,14 @@
         "documentation": {}
     },
     {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
         "label": "Signal",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
@@ -417,6 +425,54 @@
     },
     {
         "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEasingCurve",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QSize",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QRect",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
         "isExtraImport": true,
@@ -872,6 +928,14 @@
         "documentation": {}
     },
     {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QHBoxLayout",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -929,6 +993,46 @@
     },
     {
         "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFrame",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -1656,6 +1760,22 @@
         "documentation": {}
     },
     {
+        "label": "theme",
+        "importPath": "app.ui.styles.theme",
+        "description": "app.ui.styles.theme",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.theme",
+        "documentation": {}
+    },
+    {
+        "label": "theme",
+        "importPath": "app.ui.styles.theme",
+        "description": "app.ui.styles.theme",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.theme",
+        "documentation": {}
+    },
+    {
         "label": "annotations",
         "importPath": "__future__",
         "description": "__future__",
@@ -1773,6 +1893,70 @@
         "description": "app.ui.widgets.kscroll_area",
         "isExtraImport": true,
         "detail": "app.ui.widgets.kscroll_area",
+        "documentation": {}
+    },
+    {
+        "label": "KScrollArea",
+        "importPath": "app.ui.widgets.kscroll_area",
+        "description": "app.ui.widgets.kscroll_area",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.kscroll_area",
+        "documentation": {}
+    },
+    {
+        "label": "FrameWrapper2",
+        "importPath": "app.ui.widgets.frame_wrapper2",
+        "description": "app.ui.widgets.frame_wrapper2",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.frame_wrapper2",
+        "documentation": {}
+    },
+    {
+        "label": "FrameWrapper2",
+        "importPath": "app.ui.widgets.frame_wrapper2",
+        "description": "app.ui.widgets.frame_wrapper2",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.frame_wrapper2",
+        "documentation": {}
+    },
+    {
+        "label": "FrameWrapper2",
+        "importPath": "app.ui.widgets.frame_wrapper2",
+        "description": "app.ui.widgets.frame_wrapper2",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.frame_wrapper2",
+        "documentation": {}
+    },
+    {
+        "label": "FrameWrapper2",
+        "importPath": "app.ui.widgets.frame_wrapper2",
+        "description": "app.ui.widgets.frame_wrapper2",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.frame_wrapper2",
+        "documentation": {}
+    },
+    {
+        "label": "FrameWrapper2",
+        "importPath": "app.ui.widgets.frame_wrapper2",
+        "description": "app.ui.widgets.frame_wrapper2",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.frame_wrapper2",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
         "documentation": {}
     },
     {
@@ -1809,6 +1993,62 @@
     },
     {
         "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPainter",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPainterPath",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QColor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QMouseEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QEnterEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPaintEvent",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
         "isExtraImport": true,
@@ -2072,35 +2312,11 @@
         "documentation": {}
     },
     {
-        "label": "FrameWrapper2",
-        "importPath": "app.ui.widgets.frame_wrapper2",
-        "description": "app.ui.widgets.frame_wrapper2",
+        "label": "BaseLayout",
+        "importPath": "app.ui.widgets.base_layout",
+        "description": "app.ui.widgets.base_layout",
         "isExtraImport": true,
-        "detail": "app.ui.widgets.frame_wrapper2",
-        "documentation": {}
-    },
-    {
-        "label": "FrameWrapper2",
-        "importPath": "app.ui.widgets.frame_wrapper2",
-        "description": "app.ui.widgets.frame_wrapper2",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.frame_wrapper2",
-        "documentation": {}
-    },
-    {
-        "label": "FrameWrapper2",
-        "importPath": "app.ui.widgets.frame_wrapper2",
-        "description": "app.ui.widgets.frame_wrapper2",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.frame_wrapper2",
-        "documentation": {}
-    },
-    {
-        "label": "FrameWrapper2",
-        "importPath": "app.ui.widgets.frame_wrapper2",
-        "description": "app.ui.widgets.frame_wrapper2",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.frame_wrapper2",
+        "detail": "app.ui.widgets.base_layout",
         "documentation": {}
     },
     {
@@ -2144,83 +2360,19 @@
         "documentation": {}
     },
     {
-        "label": "Icons",
-        "importPath": "app.ui.assets.icons",
-        "description": "app.ui.assets.icons",
+        "label": "TextWrapper",
+        "importPath": "app.ui.widgets.text_wrapper",
+        "description": "app.ui.widgets.text_wrapper",
         "isExtraImport": true,
-        "detail": "app.ui.assets.icons",
+        "detail": "app.ui.widgets.text_wrapper",
         "documentation": {}
     },
     {
-        "label": "Icons",
-        "importPath": "app.ui.assets.icons",
-        "description": "app.ui.assets.icons",
+        "label": "TextWrapper",
+        "importPath": "app.ui.widgets.text_wrapper",
+        "description": "app.ui.widgets.text_wrapper",
         "isExtraImport": true,
-        "detail": "app.ui.assets.icons",
-        "documentation": {}
-    },
-    {
-        "label": "Icons",
-        "importPath": "app.ui.assets.icons",
-        "description": "app.ui.assets.icons",
-        "isExtraImport": true,
-        "detail": "app.ui.assets.icons",
-        "documentation": {}
-    },
-    {
-        "label": "Icons",
-        "importPath": "app.ui.assets.icons",
-        "description": "app.ui.assets.icons",
-        "isExtraImport": true,
-        "detail": "app.ui.assets.icons",
-        "documentation": {}
-    },
-    {
-        "label": "Icons",
-        "importPath": "app.ui.assets.icons",
-        "description": "app.ui.assets.icons",
-        "isExtraImport": true,
-        "detail": "app.ui.assets.icons",
-        "documentation": {}
-    },
-    {
-        "label": "load_svg_pixmap",
-        "importPath": "app.ui.widgets.load_svg_pixmap",
-        "description": "app.ui.widgets.load_svg_pixmap",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.load_svg_pixmap",
-        "documentation": {}
-    },
-    {
-        "label": "load_svg_pixmap",
-        "importPath": "app.ui.widgets.load_svg_pixmap",
-        "description": "app.ui.widgets.load_svg_pixmap",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.load_svg_pixmap",
-        "documentation": {}
-    },
-    {
-        "label": "load_svg_pixmap",
-        "importPath": "app.ui.widgets.load_svg_pixmap",
-        "description": "app.ui.widgets.load_svg_pixmap",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.load_svg_pixmap",
-        "documentation": {}
-    },
-    {
-        "label": "load_svg_pixmap",
-        "importPath": "app.ui.widgets.load_svg_pixmap",
-        "description": "app.ui.widgets.load_svg_pixmap",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.load_svg_pixmap",
-        "documentation": {}
-    },
-    {
-        "label": "load_svg_pixmap",
-        "importPath": "app.ui.widgets.load_svg_pixmap",
-        "description": "app.ui.widgets.load_svg_pixmap",
-        "isExtraImport": true,
-        "detail": "app.ui.widgets.load_svg_pixmap",
+        "detail": "app.ui.widgets.text_wrapper",
         "documentation": {}
     },
     {
@@ -2288,75 +2440,11 @@
         "documentation": {}
     },
     {
-        "label": "tw",
-        "importPath": "app.ui.styles.utilities",
-        "description": "app.ui.styles.utilities",
+        "label": "ButtonWrapper2",
+        "importPath": "app.ui.widgets.button_wrapper2",
+        "description": "app.ui.widgets.button_wrapper2",
         "isExtraImport": true,
-        "detail": "app.ui.styles.utilities",
-        "documentation": {}
-    },
-    {
-        "label": "tw",
-        "importPath": "app.ui.styles.utilities",
-        "description": "app.ui.styles.utilities",
-        "isExtraImport": true,
-        "detail": "app.ui.styles.utilities",
-        "documentation": {}
-    },
-    {
-        "label": "tw",
-        "importPath": "app.ui.styles.utilities",
-        "description": "app.ui.styles.utilities",
-        "isExtraImport": true,
-        "detail": "app.ui.styles.utilities",
-        "documentation": {}
-    },
-    {
-        "label": "tw",
-        "importPath": "app.ui.styles.utilities",
-        "description": "app.ui.styles.utilities",
-        "isExtraImport": true,
-        "detail": "app.ui.styles.utilities",
-        "documentation": {}
-    },
-    {
-        "label": "CONFIG",
-        "importPath": "app.utils.constants",
-        "description": "app.utils.constants",
-        "isExtraImport": true,
-        "detail": "app.utils.constants",
-        "documentation": {}
-    },
-    {
-        "label": "CONFIG",
-        "importPath": "app.utils.constants",
-        "description": "app.utils.constants",
-        "isExtraImport": true,
-        "detail": "app.utils.constants",
-        "documentation": {}
-    },
-    {
-        "label": "CONFIG",
-        "importPath": "app.utils.constants",
-        "description": "app.utils.constants",
-        "isExtraImport": true,
-        "detail": "app.utils.constants",
-        "documentation": {}
-    },
-    {
-        "label": "CONFIG",
-        "importPath": "app.utils.constants",
-        "description": "app.utils.constants",
-        "isExtraImport": true,
-        "detail": "app.utils.constants",
-        "documentation": {}
-    },
-    {
-        "label": "CONFIG",
-        "importPath": "app.utils.constants",
-        "description": "app.utils.constants",
-        "isExtraImport": true,
-        "detail": "app.utils.constants",
+        "detail": "app.ui.widgets.button_wrapper2",
         "documentation": {}
     },
     {
@@ -2373,6 +2461,222 @@
         "description": "app.ui.widgets.button_wrapper2",
         "isExtraImport": true,
         "detail": "app.ui.widgets.button_wrapper2",
+        "documentation": {}
+    },
+    {
+        "label": "Icons",
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.icons",
+        "documentation": {}
+    },
+    {
+        "label": "Icons",
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.icons",
+        "documentation": {}
+    },
+    {
+        "label": "Icons",
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.icons",
+        "documentation": {}
+    },
+    {
+        "label": "Icons",
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.icons",
+        "documentation": {}
+    },
+    {
+        "label": "Icons",
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.icons",
+        "documentation": {}
+    },
+    {
+        "label": "Icons",
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.icons",
+        "documentation": {}
+    },
+    {
+        "label": "Icons",
+        "importPath": "app.ui.assets.icons",
+        "description": "app.ui.assets.icons",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.icons",
+        "documentation": {}
+    },
+    {
+        "label": "PremiumCard",
+        "importPath": "app.ui.widgets.home_window.PremiumCard",
+        "description": "app.ui.widgets.home_window.PremiumCard",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.home_window.PremiumCard",
+        "documentation": {}
+    },
+    {
+        "label": "Images",
+        "importPath": "app.ui.assets.images",
+        "description": "app.ui.assets.images",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.images",
+        "documentation": {}
+    },
+    {
+        "label": "Images",
+        "importPath": "app.ui.assets.images",
+        "description": "app.ui.assets.images",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.images",
+        "documentation": {}
+    },
+    {
+        "label": "Images",
+        "importPath": "app.ui.assets.images",
+        "description": "app.ui.assets.images",
+        "isExtraImport": true,
+        "detail": "app.ui.assets.images",
+        "documentation": {}
+    },
+    {
+        "label": "load_svg_pixmap",
+        "importPath": "app.ui.widgets.load_svg_pixmap",
+        "description": "app.ui.widgets.load_svg_pixmap",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.load_svg_pixmap",
+        "documentation": {}
+    },
+    {
+        "label": "load_svg_pixmap",
+        "importPath": "app.ui.widgets.load_svg_pixmap",
+        "description": "app.ui.widgets.load_svg_pixmap",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.load_svg_pixmap",
+        "documentation": {}
+    },
+    {
+        "label": "load_svg_pixmap",
+        "importPath": "app.ui.widgets.load_svg_pixmap",
+        "description": "app.ui.widgets.load_svg_pixmap",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.load_svg_pixmap",
+        "documentation": {}
+    },
+    {
+        "label": "load_svg_pixmap",
+        "importPath": "app.ui.widgets.load_svg_pixmap",
+        "description": "app.ui.widgets.load_svg_pixmap",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.load_svg_pixmap",
+        "documentation": {}
+    },
+    {
+        "label": "load_svg_pixmap",
+        "importPath": "app.ui.widgets.load_svg_pixmap",
+        "description": "app.ui.widgets.load_svg_pixmap",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.load_svg_pixmap",
+        "documentation": {}
+    },
+    {
+        "label": "load_svg_pixmap",
+        "importPath": "app.ui.widgets.load_svg_pixmap",
+        "description": "app.ui.widgets.load_svg_pixmap",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.load_svg_pixmap",
+        "documentation": {}
+    },
+    {
+        "label": "tw",
+        "importPath": "app.ui.styles.utilities",
+        "description": "app.ui.styles.utilities",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "tw",
+        "importPath": "app.ui.styles.utilities",
+        "description": "app.ui.styles.utilities",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "tw",
+        "importPath": "app.ui.styles.utilities",
+        "description": "app.ui.styles.utilities",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "tw",
+        "importPath": "app.ui.styles.utilities",
+        "description": "app.ui.styles.utilities",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "tw",
+        "importPath": "app.ui.styles.utilities",
+        "description": "app.ui.styles.utilities",
+        "isExtraImport": true,
+        "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "isExtraImport": true,
+        "detail": "app.utils.constants",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "isExtraImport": true,
+        "detail": "app.utils.constants",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "isExtraImport": true,
+        "detail": "app.utils.constants",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "isExtraImport": true,
+        "detail": "app.utils.constants",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG",
+        "importPath": "app.utils.constants",
+        "description": "app.utils.constants",
+        "isExtraImport": true,
+        "detail": "app.utils.constants",
         "documentation": {}
     },
     {
@@ -2456,27 +2760,19 @@
         "documentation": {}
     },
     {
-        "label": "Images",
-        "importPath": "app.ui.assets.images",
-        "description": "app.ui.assets.images",
-        "isExtraImport": true,
-        "detail": "app.ui.assets.images",
-        "documentation": {}
-    },
-    {
-        "label": "Images",
-        "importPath": "app.ui.assets.images",
-        "description": "app.ui.assets.images",
-        "isExtraImport": true,
-        "detail": "app.ui.assets.images",
-        "documentation": {}
-    },
-    {
         "label": "FaviourateCardsArea",
         "importPath": "app.ui.widgets.home_window.Faviourate_Cards_Area",
         "description": "app.ui.widgets.home_window.Faviourate_Cards_Area",
         "isExtraImport": true,
         "detail": "app.ui.widgets.home_window.Faviourate_Cards_Area",
+        "documentation": {}
+    },
+    {
+        "label": "CardsContainer",
+        "importPath": "app.ui.widgets.home_window.CardsContainer",
+        "description": "app.ui.widgets.home_window.CardsContainer",
+        "isExtraImport": true,
+        "detail": "app.ui.widgets.home_window.CardsContainer",
         "documentation": {}
     },
     {
@@ -2542,6 +2838,15 @@
         "description": "PySide6.QtSvg",
         "isExtraImport": true,
         "detail": "PySide6.QtSvg",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
         "documentation": {}
     },
     {
@@ -2851,7 +3156,16 @@
         "kind": 2,
         "importPath": "app.ui.styles.utilities",
         "description": "app.ui.styles.utilities",
-        "peekOfCode": "def tw(*classes: UtilityClass) -> str:\n    \"\"\"\n    Tailwind-style utility combiner.\n    \"\"\"\n    return \"\\n\".join(\n        UTILITIES[class_name]\n        for class_name in classes\n    )",
+        "peekOfCode": "def tw(*classes: UtilityClass) -> str:\n    \"\"\"\n    Tailwind-style utility combiner.\n    \"\"\"\n    return \"\\n\".join(\n        UTILITIES[class_name]\n        for class_name in classes\n    )\ndef tw_selector(selector: str, *classes: UtilityClass) -> str:\n    \"\"\"Wrap tw() utilities inside a CSS selector block.\"\"\"",
+        "detail": "app.ui.styles.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "tw_selector",
+        "kind": 2,
+        "importPath": "app.ui.styles.utilities",
+        "description": "app.ui.styles.utilities",
+        "peekOfCode": "def tw_selector(selector: str, *classes: UtilityClass) -> str:\n    \"\"\"Wrap tw() utilities inside a CSS selector block.\"\"\"\n    return f\"{selector} {{ {tw(*classes)} }}\"",
         "detail": "app.ui.styles.utilities",
         "documentation": {}
     },
@@ -2862,6 +3176,15 @@
         "description": "app.ui.widgets.card_window.horizontal_card_scroll_area",
         "peekOfCode": "class HorizontalCardScrollArea(KScrollArea):\n    def __init__(\n        self,\n        cards: list[ImageCard],\n        parent: QWidget | None = None,\n        index: int = 0,\n    ) -> None:\n        super().__init__(\n            direction=\"horizontal\",\n            parent=parent,",
         "detail": "app.ui.widgets.card_window.horizontal_card_scroll_area",
+        "documentation": {}
+    },
+    {
+        "label": "CardsContainer",
+        "kind": 6,
+        "importPath": "app.ui.widgets.home_window.CardsContainer",
+        "description": "app.ui.widgets.home_window.CardsContainer",
+        "peekOfCode": "class CardsContainer(FrameWrapper2):\n    def __init__(\n        self,\n        parent: QWidget | None = None,\n    ) -> None:\n        super().__init__(\n            parent=parent,\n            shape=\"styled\",\n            shadow=\"plain\",\n            object_name=\"cards-container\",",
+        "detail": "app.ui.widgets.home_window.CardsContainer",
         "documentation": {}
     },
     {
@@ -2898,6 +3221,33 @@
         "description": "app.ui.widgets.home_window.HomeContentArea",
         "peekOfCode": "class HomeContentArea(FrameWrapper):\n    def __init__(\n        self,\n        parent: QWidget | None = None,\n    ) -> None:\n        super().__init__(\n            parent=parent,\n            shape=\"styled\",\n            shadow=\"plain\",\n            object_name=\"home-content-area\",",
         "detail": "app.ui.widgets.home_window.HomeContentArea",
+        "documentation": {}
+    },
+    {
+        "label": "_LikeButton",
+        "kind": 6,
+        "importPath": "app.ui.widgets.home_window.PremiumCard",
+        "description": "app.ui.widgets.home_window.PremiumCard",
+        "peekOfCode": "class _LikeButton(QFrame):\n    toggled = Signal(bool)\n    def __init__(\n        self, \n        parent: QWidget | None = None, \n        icon_size: int = 30 \n            ) -> None:\n        super().__init__(\n            parent=parent\n        )",
+        "detail": "app.ui.widgets.home_window.PremiumCard",
+        "documentation": {}
+    },
+    {
+        "label": "_ImageArea",
+        "kind": 6,
+        "importPath": "app.ui.widgets.home_window.PremiumCard",
+        "description": "app.ui.widgets.home_window.PremiumCard",
+        "peekOfCode": "class _ImageArea(QFrame):\n    \"\"\"\n    100×100 image container with:\n      - clipped rounded corners\n      - hover scale animation on the pixmap\n      - like button (top-right)\n      - a public bottom-left slot (QHBoxLayout) for badges / tags\n    \"\"\"\n    def __init__(\n        self,",
+        "detail": "app.ui.widgets.home_window.PremiumCard",
+        "documentation": {}
+    },
+    {
+        "label": "PremiumCard",
+        "kind": 6,
+        "importPath": "app.ui.widgets.home_window.PremiumCard",
+        "description": "app.ui.widgets.home_window.PremiumCard",
+        "peekOfCode": "class PremiumCard(QFrame):\n    \"\"\"\n    A premium media card widget.\n    Signals\n    -------\n    clicked       — emitted when the card body is clicked\n    like_toggled  — emitted with (bool) when the heart is toggled\n    Layout\n    ------\n    ┌──────────────────────────────┐",
+        "detail": "app.ui.widgets.home_window.PremiumCard",
         "documentation": {}
     },
     {
@@ -3103,7 +3453,7 @@
         "kind": 2,
         "importPath": "app.ui.widgets.load_svg_pixmap",
         "description": "app.ui.widgets.load_svg_pixmap",
-        "peekOfCode": "def load_svg_pixmap(\n    path: Path,\n    color: str = theme.ACCENT,\n    size: int = 24,\n) -> QPixmap:\n    svg_text = path.read_text(encoding=\"utf-8\")\n    # Replace stroke color\n    svg_text = svg_text.replace(\n        'stroke=\"currentColor\"',\n        f'stroke=\"{color}\"'",
+        "peekOfCode": "def load_svg_pixmap(\n    path: Path,\n    color: str = theme.ACCENT,\n    size: int = 24,\n    mode: str = \"stroke\",  # \"stroke\" | \"fill\"\n) -> QPixmap:\n    svg_text = path.read_text(encoding=\"utf-8\")\n    if mode == \"stroke\":\n        svg_text = svg_text.replace(\n            'stroke=\"currentColor\"',",
         "detail": "app.ui.widgets.load_svg_pixmap",
         "documentation": {}
     },

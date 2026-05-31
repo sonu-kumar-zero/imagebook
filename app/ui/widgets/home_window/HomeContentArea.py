@@ -29,6 +29,7 @@ from app.ui.widgets.home_window.GreetingContainer import GreetingContainer
 from app.ui.widgets.horizontal_carousal import ImageCarousel
 from app.ui.assets.images import Images
 from app.ui.widgets.home_window.Faviourate_Cards_Area import FaviourateCardsArea
+from app.ui.widgets.home_window.CardsContainer import CardsContainer
 
 
 class HomeContentArea(FrameWrapper):
@@ -72,6 +73,10 @@ class HomeContentArea(FrameWrapper):
         # favourite cards
         favourite_cards = FaviourateCardsArea()
         scroll_container.addWidget(favourite_cards)
+        
+        # cards container
+        cards_container = CardsContainer()
+        scroll_container.addWidget(cards_container)
 
         # ==================================
         # FOOTER

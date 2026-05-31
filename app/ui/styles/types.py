@@ -29,6 +29,7 @@ UtilityClass = Literal[
     "bg-red",
     "bg-blue",
     "bg-green",
+    "bg-transparent",
 
     # =========================
     # BORDERS
@@ -45,6 +46,7 @@ UtilityClass = Literal[
     "rounded-image",
     "rounded-button",
     "rounded-input",
+    "rounded-full",
 
     # =========================
     # TEXT

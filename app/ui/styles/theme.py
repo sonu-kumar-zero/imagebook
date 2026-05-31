@@ -85,6 +85,7 @@ class Theme:
     RADIUS_IMAGE: int = 18
     RADIUS_BUTTON: int = 14
     RADIUS_INPUT: int = 12
+    RADIUS_FULL: int = 9999
 
     # =========================
     # SPACING SYSTEM (IMPORTANT FOR PREMIUM FEEL)
